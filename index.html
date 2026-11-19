@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efe8d8">
+  <meta name="description" content="Nón lá – Đường kim đi qua năm tháng. Longform ba kỳ về nón lá, làng Chuông và những thế hệ tiếp nối nghề truyền thống.">
+  <title>Nón lá — Đường kim đi qua năm tháng | Longform</title>
+  <!-- Font có đầy đủ dấu tiếng Việt; có font hệ thống dự phòng nếu offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+/* NÓN LÁ LONGFORM · Không cần thư viện bên ngoài */
+:root{--paper:#f2ecde;--paper-light:#fbf8f0;--ink:#292b25;--muted:#776f61;--border:#d4cab5;--olive:#415845;--olive-dark:#243d35;--terracotta:#9d543f;--red:#7d3d37;--cream:#f0dbac;--head-height:74px;--content:760px;--wide:1180px;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:var(--head-height)}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}img,video,svg{max-width:100%}button,select,input{font:inherit}button{cursor:pointer}a{color:inherit}a:hover{color:var(--terracotta)}:focus-visible{outline:3px solid #d48154;outline-offset:4px}::selection{background:#e3ba8b;color:#382920}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:fixed;top:-80px;left:12px;z-index:999;background:white;padding:12px 20px}.skip-link:focus{top:12px}.shell{width:min(calc(100% - 68px),var(--wide));margin-inline:auto}.page-anchor{position:absolute;top:0}
+.topbar{position:fixed;z-index:100;top:0;right:0;left:0;height:var(--head-height);background:rgba(245,240,229,.95);backdrop-filter:blur(18px);display:flex;align-items:center;gap:26px;padding:0 clamp(20px,3vw,54px);box-shadow:0 1px 0 rgba(54,43,30,.14);transition:background .25s}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;white-space:nowrap;color:var(--ink)!important}.brand-mark{display:grid;place-items:center;width:33px;height:33px;border:1.5px solid #745637;border-radius:50%;font-size:28px;line-height:1;transform:rotate(-28deg)}.brand strong{font-family:var(--serif);font-size:19px;letter-spacing:.045em}.brand small{display:block;font-size:8px;letter-spacing:.22em;margin-top:4px;color:var(--muted)}.chapter-nav{display:flex;justify-content:center;gap:0;flex:1;height:100%;align-items:stretch}.nav-link{display:flex;align-items:center;gap:10px;padding:0 clamp(15px,2.1vw,34px);font-size:11px;font-weight:700;letter-spacing:.07em;text-decoration:none;text-transform:uppercase;color:#696252;border-bottom:2px solid transparent;transition:.2s}.nav-link span{font-family:var(--serif);font-size:19px;font-weight:400;color:#8b7d66}.nav-link:hover,.nav-link.is-current{color:var(--red);background:rgba(156,112,82,.06);border-bottom-color:var(--terracotta)}.nav-link.is-current span{color:var(--red)}.quiet-btn{display:flex;gap:8px;align-items:center;border:1px solid #bcae95;background:none;border-radius:30px;padding:9px 15px;color:#5c4d3b;font-size:11px;text-transform:uppercase;letter-spacing:.07em}.quiet-btn:hover{background:#ede2ce}.quiet-btn>span:first-child{font-size:17px}.mobile-select-wrap{display:none}.reading-progress{position:absolute;bottom:0;left:0;width:100%;height:3px;transform-origin:left;transform:scaleX(0);background:#bd6949;pointer-events:none}
+.eyebrow,.module-index{font-size:11px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--terracotta)}.eyebrow.light{color:#edce9b}.eyebrow .rule{display:inline-block;width:30px;height:1px;background:currentColor;vertical-align:middle;margin-right:10px}.story-hero{isolation:isolate;position:relative;min-height:min(900px,100svh);min-height:max(700px,100svh);background:radial-gradient(ellipse at 67% 45%,#9d8053 0%,#554b34 39%,#28362d 74%,#1d322c 100%);color:#fff5df;display:flex;align-items:center;overflow:hidden;margin-top:var(--head-height)}.hero-grain{position:absolute;inset:0;pointer-events:none;opacity:.22;z-index:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.22' filter='url(%23n)'/%3E%3C/svg%3E")}.hero-orbit{position:absolute;width:740px;height:740px;border:1px solid rgba(255,239,204,.1);border-radius:50%;right:-3%;top:6%}.orbit-two{right:6%;top:15%;width:560px;height:560px}.hero-illustration{position:absolute;right:-4%;top:14%;width:min(64vw,900px);transform:rotate(-10deg);opacity:.96;filter:drop-shadow(0 37px 18px rgba(0,0,0,.3));animation:heroFloat 10s ease-in-out infinite alternate}.hero-illustration svg{width:100%}.hero-content{position:relative;z-index:2;padding-top:120px;padding-bottom:104px}.hero-content>*{max-width:670px}.hero-pretitle{margin-top:68px;font-size:12px;text-transform:uppercase;letter-spacing:.21em;color:#f0d9af}.story-hero h1{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;font-size:clamp(80px,12vw,180px);line-height:.87;margin:26px 0 38px;text-shadow:0 5px 30px rgba(0,0,0,.08);max-width:900px}.story-hero h1 em{display:block;font-size:clamp(34px,4.5vw,68px);line-height:1.09;font-weight:400;letter-spacing:-.025em;margin-top:23px;max-width:620px}.hero-dash{color:#e5bd88;margin-left:13px}.hero-deck{font-family:var(--serif);font-size:clamp(17px,1.7vw,23px);line-height:1.65;color:#f8e7cb;max-width:595px}.scroll-cue{display:inline-flex;align-items:center;gap:15px;margin-top:55px;text-decoration:none;font-size:10px;letter-spacing:.2em;color:#fff2d4}.scroll-cue:hover{color:white}.scroll-line{display:block;width:42px;height:1px;background:currentColor}.scroll-cue span:last-child{font-size:20px}.hero-corner{position:absolute;bottom:32px;right:38px;color:#e8d4af;font-size:10px;letter-spacing:.18em}@keyframes heroFloat{to{transform:rotate(-5deg) translateY(-22px)}}
+.paper-section{padding:88px 0 0;background:var(--paper)}.section-topline{display:flex;justify-content:space-between;gap:15px;padding-bottom:20px;margin-bottom:92px;border-bottom:1px solid #c6bca9;color:var(--muted);font-size:10px;letter-spacing:.2em}.prose{max-width:var(--content);padding:0 24px;margin:0 auto 88px;font-family:var(--serif);font-size:clamp(18px,1.65vw,21px);line-height:1.94;color:#33352c}.prose p{margin:0 0 29px}.prose h2{font-size:clamp(36px,4vw,56px);font-weight:400;letter-spacing:-.04em;line-height:1.15;margin:68px 0 35px;color:#253a2d}.prose h2 em{font-weight:400;color:var(--terracotta)}.prose .lead{font-size:clamp(24px,2.8vw,35px);line-height:1.48;letter-spacing:-.02em;color:#37483a}.prose .lead:first-letter{font-size:1.95em;float:left;line-height:.8;margin:10px 8px 0 0;color:var(--terracotta)}
+.media-frame{margin:0;min-width:0}.media-frame>.media-placeholder{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:15px;width:100%;min-height:320px;background:linear-gradient(125deg,rgba(65,84,67,.65),rgba(40,58,49,.73)),repeating-linear-gradient(125deg,transparent 0 40px,#cabf9f 41px 42px);color:#fdf0d8;border:1px solid rgba(255,255,255,.1);overflow:hidden;padding:28px}.media-frame>.media-placeholder:before,.media-frame>.media-placeholder:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(244,231,196,.15);border-radius:50%;right:-80px;top:-80px}.media-frame>.media-placeholder:after{right:auto;top:auto;left:-90px;bottom:-170px}.media-placeholder>span,.media-placeholder>small{position:relative;z-index:1}.media-placeholder>span:nth-last-child(2){font-size:12px;font-weight:700;letter-spacing:.17em}.media-placeholder small{max-width:350px;color:#d4d2bf;font-size:12px;line-height:1.6}.media-glyph{font-size:58px;color:#cfc8a8}.play-outline{display:grid;place-items:center;width:76px;height:76px;border:1px solid rgba(255,255,255,.7);border-radius:50%;font-size:23px;padding-left:3px}.media-frame>img,.media-frame>video{display:block;width:100%;height:100%;object-fit:cover;min-height:250px}.media-frame video{background:#1a241f;aspect-ratio:16/9;height:auto}.media-frame figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:13px 0;font:12px/1.6 var(--sans);color:#777367}.caption-tag{color:#a15e4a;white-space:nowrap}.wide-media{max-width:1320px;width:min(calc(100% - 44px),1320px);margin:75px auto 90px}.wide-media>.media-placeholder{height:clamp(340px,53vw,650px)}.wide-media>video{aspect-ratio:16/9}.portrait-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(32px,6vw,100px);align-items:center;margin:100px auto}.portrait-media>.media-placeholder{height:590px}.portrait-media>img{aspect-ratio:4/5;min-height:0}.portrait-copy{max-width:490px;font:clamp(18px,1.6vw,21px)/1.95 var(--serif)}.portrait-copy p{margin:25px 0}.statement{position:relative;text-align:center;background:#e5d9be;padding:95px max(30px,calc((100vw - 930px)/2)) 105px;color:#354d3b}.statement-mark{font:110px/1 var(--serif);color:#bb8e5f}.statement p{max-width:930px;margin:0 auto;font:clamp(28px,3.5vw,47px)/1.44 var(--serif);letter-spacing:-.02em}.next-chapter{display:flex;align-items:center;gap:35px;max-width:100%;margin:0;background:#30463b;color:#fbf0d9;text-decoration:none;padding:52px max(30px,calc((100vw - 1180px)/2));transition:background .2s}.next-chapter:hover{background:#3b5d48;color:#fff}.next-chapter>span:first-child{font-size:10px;letter-spacing:.19em;color:#e6c994;white-space:nowrap}.next-chapter strong{font:clamp(25px,3vw,45px)/1.2 var(--serif);font-weight:400}.next-arrow{font-size:36px;margin-left:auto;transition:transform .2s}.next-chapter:hover .next-arrow{transform:translate(6px,-6px)}
+.interactive-wrap{margin-top:110px;margin-bottom:120px}.module-heading{margin-bottom:36px}.module-heading h3,.game-intro h3{font:400 clamp(37px,4vw,56px)/1.15 var(--serif);letter-spacing:-.04em;margin:12px 0 13px;color:#2d4737}.module-heading h3 em,.game-intro h3 em{color:var(--terracotta)}.module-heading p,.game-intro p{font:16px/1.7 var(--sans);color:#736c60;max-width:620px}.material-lab{display:grid;grid-template-columns:1.3fr 1fr;min-height:510px;background:#e8deca;border:1px solid #d9cbae}.material-art{position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at center,#f7eddb 4%,#d5c3a2 85%)}.material-art:after{content:"";position:absolute;inset:24px;border:1px solid rgba(111,93,62,.2);pointer-events:none}.material-hat{width:86%;filter:drop-shadow(0 15px 12px #6856403b)}.hotspot{position:absolute;left:var(--x);top:var(--y);width:43px;height:43px;transform:translate(-50%,-50%);border:1px solid #fff;border-radius:50%;background:rgba(48,74,57,.86);color:white;box-shadow:0 0 0 8px rgba(247,246,233,.28);z-index:1;font-family:var(--serif);font-size:18px;transition:scale .2s,background .2s}.hotspot:hover,.hotspot.is-active{background:#a25c41;scale:1.13}.material-detail{padding:65px clamp(25px,4vw,70px);align-self:center}.material-detail>span{font-size:10px;color:#9d634d;letter-spacing:.2em}.material-symbol{font-size:70px;line-height:1.3;color:#ab8850;margin-top:35px}.material-detail h4{font:400 43px/1.2 var(--serif);margin:8px 0 14px}.material-detail p{font:18px/1.8 var(--serif);min-height:130px}.material-choice{display:flex;gap:8px;margin-top:30px}.material-choice button{border:1px solid #a8a08d;border-radius:30px;background:transparent;padding:10px 20px;font-size:13px}.material-choice button:hover,.material-choice button.is-active{background:#314d3c;color:white;border-color:#314d3c}
+.chapter-hero{position:relative;min-height:650px;display:flex;align-items:center;overflow:hidden;color:#f6f0df;isolation:isolate;scroll-margin-top:var(--head-height)}.chapter-hero:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.18;background:repeating-radial-gradient(circle at 72% 58%,transparent 0 74px,#f5e8c6 75px 76px)}.chapter-hero-2{background:linear-gradient(115deg,#263d34,#4c644b 67%,#93775a)}.chapter-hero-3{background:linear-gradient(118deg,#763e37,#a75646 55%,#c58867)}.chapter-hero-inner{position:relative;padding-top:120px;padding-bottom:110px}.chapter-hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center}.chapter-hero-number{font:80px/1 var(--serif);color:#dbc29a;margin:35px 0 0}.chapter-hero-number span{font:24px var(--sans);color:#c2b79d}.chapter-hero h2{font:400 clamp(54px,6.4vw,99px)/.98 var(--serif);letter-spacing:-.05em;max-width:830px;margin:25px 0}.chapter-hero h2 em{display:block;font-weight:400;color:#e7ca96}.chapter-hero-sentence{font:clamp(20px,2vw,27px)/1.6 var(--serif);max-width:610px;color:#f4e8d7}.chapter-hero-art{margin-left:-90px;transform:rotate(12deg) scale(1.13);filter:drop-shadow(0 18px 22px rgba(0,0,0,.23))}.chapter-hero-3 .chapter-hero-art{transform:rotate(-14deg) scale(1.19)}.chapter-hero-3 h2 em{color:#fcd9b4}.second-content{padding-top:105px}
+.pullquote{position:relative;margin:65px auto 90px;max-width:930px;padding:50px 75px 48px;border-top:1px solid #a88764;border-bottom:1px solid #a88764;color:#5e513d}.pullquote>.quote-mark{display:block;font:96px/1 var(--serif);color:#ad8956;height:67px}.pullquote p{font:italic clamp(24px,2.6vw,37px)/1.55 var(--serif);margin:0 0 25px}.pullquote footer{font:700 12px/1.5 var(--sans);letter-spacing:.06em}.pullquote footer span{display:block;color:#9c7055;margin-top:5px;font-weight:400}.process-section{background:#e3dfce;padding:100px 0;margin:85px 0}.process-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:start}.process-sticky{position:sticky;top:calc(var(--head-height) + 25px)}.process-video>.media-placeholder{min-height:350px;aspect-ratio:16/10}.process-caption{padding:20px 25px 30px;background:#355040;color:#ffeed3}.process-caption>span{display:block;color:#d9b487;font-size:11px;letter-spacing:.2em;margin-bottom:8px}.process-caption strong{font:30px var(--serif)}.process-caption p{font:16px/1.7 var(--serif);min-height:55px}.mini-progress{height:2px;background:#748978;margin-top:25px}.mini-progress span{display:block;height:100%;width:20%;background:#e4bd7d;transition:width .25s}.process-steps{display:flex;flex-direction:column;border-top:1px solid #b7ae9e}.process-step{display:grid;grid-template-columns:45px 1fr;column-gap:15px;text-align:left;align-items:baseline;padding:29px 15px;border:0;border-bottom:1px solid #b7ae9e;background:transparent;color:#5b6155}.process-step>span{grid-row:span 2;font:24px var(--serif);color:#a38059}.process-step strong{font:27px var(--serif);font-weight:400}.process-step small{font:12px/1.6 var(--sans);margin-top:6px}.process-step:hover,.process-step.is-active{background:#d8ceb8;color:#243e32}.process-step.is-active{box-shadow:inset 3px 0 #a75b3d}
+.game-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;padding:35px 0 100px}.game-intro h3{font-size:clamp(34px,3.7vw,50px)}.text-button{padding:12px 0;border:0;border-bottom:1px solid var(--terracotta);background:none;color:var(--terracotta);font-size:13px;margin-top:15px}.game-area{background:#faf5e9;border:1px solid #d4c4a9;padding:28px;min-height:320px}.game-track{display:flex;flex-wrap:wrap;gap:8px;min-height:62px;border-bottom:1px dashed #b7a991;margin-bottom:23px;padding:0 0 16px}.game-selected{padding:11px 13px;border-radius:3px;background:#3c6249;color:white;font-size:12px}.game-empty{color:#8b8375;align-self:center;font-size:12px;font-style:italic}.game-options{display:flex;flex-wrap:wrap;gap:9px}.game-option{border:1px solid #b5aa95;border-radius:3px;background:#f0e7d6;padding:12px 15px;color:#3b3b32;transition:.2s;font-size:13px}.game-option:hover{border-color:var(--olive);background:#e2d4b9}.game-option:disabled{opacity:.33;cursor:not-allowed}.game-feedback{margin:25px 0 0;font-size:13px;color:#736d60;min-height:24px}.game-feedback.error{color:#a44435}.game-feedback.success{color:#2d6541;font-weight:700}.next-chapter-green{background:#a75942}.next-chapter-green:hover{background:#b9684d}.third-content{padding-top:105px}.feature-quote{display:grid;grid-template-columns:1.1fr .9fr;background:#e7d4bd;margin-top:60px;margin-bottom:105px;align-items:stretch}.graduation-media>.media-placeholder{min-height:540px}.graduation-media>img{aspect-ratio:4/5}.feature-quote figure figcaption{padding-left:15px;padding-right:15px}.feature-quote blockquote{align-self:center;margin:0;padding:40px clamp(30px,4vw,65px);position:relative}.feature-quote blockquote>span{font:100px/1 var(--serif);color:#a95f54}.feature-quote blockquote p{font:italic clamp(25px,2.9vw,42px)/1.5 var(--serif);color:#563e37;margin:0 0 30px}.feature-quote blockquote footer{font-size:12px;letter-spacing:.08em;color:#6b4439}.feature-quote blockquote footer small{display:block;letter-spacing:0;margin-top:6px;color:#915b4d}.interview-block{margin:65px auto 95px;max-width:1030px}.interview-media>.media-placeholder{aspect-ratio:16/7.5;min-height:300px;background:linear-gradient(135deg,#5e433d,#9b755a)}.interview-block>figure>video{aspect-ratio:16/8}.transcript{border-bottom:1px solid #bcae9b}.transcript summary{cursor:pointer;padding:20px 8px;color:#674c3c;font-size:12px;text-transform:uppercase;letter-spacing:.13em;display:flex;justify-content:space-between;align-items:center;list-style:none}.transcript summary::-webkit-details-marker{display:none}.transcript summary span{font-size:22px}.transcript[open] summary span{transform:rotate(45deg)}.transcript p{padding:0 20px;font:17px/1.85 var(--serif);max-width:860px}.transcript small{display:block;padding:0 20px 22px;color:#9c6659}.compare-section{margin:100px auto 110px}.compare-visual{position:relative;isolation:isolate;aspect-ratio:16/8.4;min-height:300px;overflow:hidden;border:8px solid #f6efdf;background:#e6ba91}.compare-layer{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;overflow:hidden}.compare-after{background:radial-gradient(circle,#f3e3d7,#cd8490)}.compare-before{background:radial-gradient(circle,#ede2c8,#a6aa8b);clip-path:inset(0 calc(100% - var(--split)) 0 0)}.compare-layer img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;z-index:0}.compare-corner{z-index:1}.compare-corner{position:absolute;bottom:25px;right:30px;font-size:12px;letter-spacing:.1em;background:#fbefd9dc;padding:11px;color:#583f36}.compare-before .compare-corner{left:30px;right:auto;white-space:nowrap}.compare-divider{position:absolute;left:var(--split);top:0;bottom:0;width:3px;background:white;pointer-events:none;z-index:5;transform:translateX(-50%);box-shadow:0 0 15px #483d3555}.compare-divider span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:53px;height:53px;border-radius:50%;background:#f7f0df;display:grid;place-items:center;color:#6a5045;font-size:27px;box-shadow:0 1px 16px #463e3e33}.compare-visual input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:8;margin:0}.visual-footnote{margin:14px 0;color:#857b6d;font-size:12px}.flashcard-section{background:#d7e0cd;padding:105px 0 100px;margin:90px 0}.flash-deck{display:flex;align-items:center;justify-content:center;gap:35px;max-width:920px;margin:45px auto 24px}.flash-arrow{flex-shrink:0;display:grid;place-items:center;width:50px;height:50px;border:1px solid #9cae9d;border-radius:50%;background:transparent;color:#2d4d3c;font-size:24px}.flash-arrow:hover{background:#315441;color:#fff}.flash-card{width:min(100%,640px);height:420px;perspective:1500px;cursor:pointer;border-radius:4px;outline-offset:8px}.flash-card-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.22,.7,.2,1);box-shadow:0 20px 50px #48564729}.flash-card.is-flipped .flash-card-inner{transform:rotateY(180deg)}.flash-front,.flash-back{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;background:#faf5e8}.flash-art{height:74%;display:grid;place-items:center;background:radial-gradient(circle,#f4d6c1,#d6a3a7);overflow:hidden}.flash-art svg{width:66%;height:100%}.flash-art.has-image{background-position:center;background-size:cover}.flash-art.has-image svg{display:none}.flash-art.card-1{background:radial-gradient(circle,#dfded3,#b1bdb1)}.flash-art.card-2{background:radial-gradient(circle,#f6d8b4,#d58d70)}.flash-art.card-3{background:radial-gradient(circle,#a9bfb9,#5c7972)}.flash-info{padding:18px 28px;display:grid;grid-template-columns:1fr auto;column-gap:15px}.flash-info span{font-size:10px;letter-spacing:.14em;color:#ae6652}.flash-info h4{grid-column:1;font:29px/1.2 var(--serif);margin:6px 0}.flash-info p{grid-column:2;grid-row:1 / span 2;align-self:center;color:#767168;font-size:10px;letter-spacing:.1em}.flash-back{transform:rotateY(180deg);align-items:center;justify-content:center;text-align:center;background:#375345;color:#f7ebd5;padding:45px}.flash-back-label{font-size:11px;letter-spacing:.2em;color:#e4c192}.flash-back h4{font:40px var(--serif);margin:20px 0}.flash-back p{font:19px/1.75 var(--serif);max-width:445px}.flash-back>span:last-child{font-size:10px;letter-spacing:.15em;margin-top:20px}.flash-footer{display:flex;max-width:650px;align-items:center;justify-content:space-between;gap:20px;margin:auto;color:#6b7166;font-size:10px;letter-spacing:.13em}.flash-dots{display:flex;gap:8px}.flash-dots button{width:9px;height:9px;border:1px solid #6e8070;border-radius:50%;background:transparent;padding:0}.flash-dots button.is-active{background:#526d56;transform:scale(1.18)}.flash-video-holder{max-width:920px;margin:30px auto 0}.flash-video-holder .media-placeholder{min-height:300px}.closing-prose{padding-top:60px}.end-note{position:relative;overflow:hidden;text-align:center;background:#3d523f;color:#fff0d6;padding:110px 20px 135px;isolation:isolate}.end-note svg{position:absolute;width:520px;height:400px;left:50%;top:-140px;transform:translateX(-50%) rotate(35deg);opacity:.16;z-index:-1}.end-note>span{font-size:10px;letter-spacing:.28em;color:#e7c794}.end-note h2{font:400 clamp(44px,6vw,83px)/1.1 var(--serif);max-width:810px;margin:26px auto 32px;letter-spacing:-.04em}.end-note h2 em{color:#f0cb8d}.end-note a{display:inline-block;padding:13px 23px;border:1px solid #e7ceab;text-decoration:none;font-size:12px;letter-spacing:.07em}.end-note a:hover{background:#f5e6c9;color:#344638}.site-footer{background:#243a31;color:#e9e1d1;padding:36px 0}.footer-inner{display:flex;align-items:center;gap:55px}.footer-inner>div{display:flex;flex-direction:column;gap:5px;min-width:160px}.footer-inner strong{font:27px var(--serif)}.footer-inner span{font-size:9px;letter-spacing:.2em;color:#c4b79f}.footer-inner p{font:11px/1.6 var(--sans);max-width:590px;color:#c8c5b9;margin:0}.footer-inner>a{font-size:26px;text-decoration:none;margin-left:auto}.toast{position:fixed;bottom:20px;left:50%;z-index:200;padding:13px 19px;background:#263c32;color:white;border-radius:4px;font-size:13px;transform:translate(-50%,100px);opacity:0;pointer-events:none;transition:transform .3s,opacity .3s}.toast.is-visible{transform:translate(-50%,0);opacity:1}.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}.reveal.is-visible{opacity:1;transform:none}
+@media(max-width:1080px){.chapter-nav{gap:0}.nav-link{font-size:10px;padding:0 12px}.nav-link span{font-size:16px}.hero-illustration{right:-13%;width:72vw;opacity:.64}.story-hero h1{font-size:clamp(78px,12vw,140px)}.story-hero h1 em{font-size:clamp(33px,5vw,56px)}.hero-content>*{max-width:620px}.portrait-feature{gap:40px}.chapter-hero-art{margin-left:-80px}.flash-deck{gap:15px}}
+@media(max-width:780px){:root{--head-height:65px}.shell{width:min(calc(100% - 32px),var(--wide))}.topbar{padding:0 15px;gap:10px}.brand-mark{width:27px;height:27px;font-size:23px}.brand strong{font-size:15px}.brand small{font-size:7px}.chapter-nav{display:none}.mobile-select-wrap{display:block;flex:1;max-width:230px;margin-left:auto}.mobile-select-wrap select{width:100%;border:1px solid #d4c9b5;background:#eee6d7;padding:10px 27px 10px 10px;border-radius:4px;color:#4e5144;font-size:12px;cursor:pointer}.quiet-btn{padding:8px 10px}.share-label{display:none}.story-hero{min-height:740px;min-height:100svh}.hero-content{padding-top:80px;padding-bottom:95px}.hero-pretitle{margin-top:44px;font-size:10px}.hero-illustration{top:28%;width:90vw;right:-33%;opacity:.38}.story-hero h1{font-size:clamp(63px,16vw,125px);max-width:100%}.story-hero h1 em{font-size:clamp(30px,6.2vw,48px);max-width:480px}.hero-deck{font-size:18px;max-width:580px}.hero-corner{right:15px;bottom:15px;font-size:8px}.paper-section{padding-top:55px}.section-topline{margin-bottom:55px}.prose{padding:0 20px;margin-bottom:60px;font-size:18px}.prose h2{margin:60px 0 26px}.prose .lead{font-size:25px}.wide-media{margin:60px auto;width:calc(100% - 20px)}.wide-media>.media-placeholder{height:400px}.media-frame figcaption{padding:12px 4px;font-size:11px}.interactive-wrap{margin-top:65px;margin-bottom:70px}.module-heading h3{font-size:40px}.material-lab{grid-template-columns:1fr}.material-art{min-height:330px}.material-hat{width:min(85%,480px)}.material-detail{padding:35px 30px}.material-detail p{min-height:auto}.portrait-feature{grid-template-columns:1fr;margin:60px auto}.portrait-media>.media-placeholder{height:440px}.portrait-copy{max-width:100%;padding:0 13px}.statement{padding:70px 22px}.statement p{font-size:28px}.next-chapter{flex-wrap:wrap;gap:12px;padding:36px 20px}.next-chapter>span:first-child{flex:0 0 100%}.next-chapter strong{font-size:30px}.chapter-hero{min-height:630px}.chapter-hero-inner{padding-top:100px;padding-bottom:60px}.chapter-hero-grid{grid-template-columns:1fr}.chapter-hero h2{font-size:clamp(49px,9vw,72px);position:relative;z-index:1}.chapter-hero-art{position:absolute;width:66%;right:-16%;bottom:0;opacity:.35;transform:rotate(12deg)!important}.chapter-hero-number{font-size:60px}.chapter-hero-sentence{max-width:500px}.pullquote{margin:60px 20px;padding:30px 20px}.pullquote p{font-size:26px}.process-section{padding:70px 0}.process-layout{grid-template-columns:1fr;gap:24px}.process-sticky{position:static}.process-steps{display:grid;grid-template-columns:1fr 1fr}.process-step{padding:18px 9px;grid-template-columns:30px 1fr;gap:8px}.process-step>span{font-size:18px}.process-step strong{font-size:20px}.game-section{grid-template-columns:1fr;padding-bottom:70px;gap:20px}.feature-quote{grid-template-columns:1fr}.graduation-media>.media-placeholder{min-height:410px}.feature-quote blockquote{padding:20px 30px 45px}.compare-section{margin:80px auto}.compare-visual{aspect-ratio:4/3}.compare-corner{font-size:9px;padding:8px;bottom:12px;right:12px}.compare-before .compare-corner{left:12px}.flashcard-section{padding:70px 0}.flash-card{height:365px}.flash-art{height:69%}.flash-info{padding:14px}.flash-info h4{font-size:25px}.flash-info p{font-size:8px}.flash-back h4{font-size:33px}.flash-back p{font-size:17px}.interview-media>.media-placeholder{aspect-ratio:16/10}.footer-inner{flex-wrap:wrap;gap:20px}}
+@media(max-width:480px){.brand{gap:5px}.brand small{letter-spacing:.09em}.mobile-select-wrap{max-width:150px}.mobile-select-wrap select{font-size:10px;padding-left:5px}.quiet-btn{padding:8px}.story-hero{min-height:800px}.hero-content{padding-top:54px}.hero-pretitle{max-width:250px;line-height:1.8}.story-hero h1{font-size:clamp(63px,18vw,92px);margin-top:22px}.story-hero h1 em{font-size:36px;margin-top:15px}.hero-deck{font-size:17px}.hero-illustration{width:115vw;right:-49%;top:28%;opacity:.28}.scroll-cue{margin-top:35px}.prose{padding:0 16px}.prose h2{font-size:36px}.material-art{min-height:270px}.hotspot{height:38px;width:38px}.material-detail h4{font-size:36px}.media-placeholder>span:nth-last-child(2){font-size:10px}.media-frame>.media-placeholder{padding:20px}.wide-media>.media-placeholder{height:280px}.portrait-media>.media-placeholder{height:350px}.chapter-hero{min-height:560px}.chapter-hero h2{font-size:50px}.chapter-hero-number{font-size:52px}.chapter-hero-sentence{font-size:19px}.pullquote p{font-size:23px}.process-video>.media-placeholder{min-height:230px}.process-steps{grid-template-columns:1fr}.process-step{grid-template-columns:45px 1fr}.game-area{padding:18px}.feature-quote blockquote p{font-size:26px}.compare-visual{aspect-ratio:1/1.05;min-height:280px}.compare-corner{font-size:8px;max-width:125px;line-height:1.4;white-space:normal!important}.flash-deck{gap:7px}.flash-arrow{width:32px;height:32px;font-size:17px}.flash-card{height:330px}.flash-art{height:68%}.flash-art svg{width:100%}.flash-info h4{font-size:22px}.flash-info span{font-size:9px}.flash-info p{max-width:70px;line-height:1.5}.flash-footer>span:last-child{display:none}.flash-back{padding:20px}.flash-back h4{font-size:29px}.flash-back p{font-size:16px}.end-note{padding:90px 20px}.end-note h2{font-size:46px}.footer-inner>div{min-width:125px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+
+/* ================================================================
+   V2 · HERO CHỮ LỚN / GIF LÁ CỌ THÀNH NÓN / FONT TIẾNG VIỆT
+   ================================================================ */
+:root {
+  --serif: "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
+  --sans: "Be Vietnam Pro", "Segoe UI", "Arial", "DejaVu Sans", sans-serif;
+  --display: "Be Vietnam Pro", "Arial", "DejaVu Sans", sans-serif;
+}
+body { font-family:var(--sans); }
+.prose, .prose p, .prose h2, .pullquote p, .statement p,
+.feature-quote blockquote, .chapter-hero h2, .end-note h2 {
+  font-family:var(--serif);
+}
+.topbar { background: rgba(255,249,245,.93); box-shadow:0 1px 0 rgba(70,45,55,.15); }
+.brand strong { font-family:var(--display); font-size:17px; font-weight:800; letter-spacing:-.045em; }
+.nav-link { letter-spacing:.025em; font-weight:700; }
+
+.story-hero {
+  margin-top:var(--head-height);
+  min-height: min(940px, calc(100svh - var(--head-height)));
+  min-height: max(700px, calc(100svh - var(--head-height)));
+  display:block;
+  background:linear-gradient(136deg, #ff93c5 0%, #b999d0 49%, #8aa995 100%);
+  isolation:isolate;
+  color:#fff8ec;
+  text-align:center;
+  overflow:hidden;
+}
+.story-hero .hero-motion { position:absolute; inset:0; z-index:-3; overflow:hidden; }
+.story-hero .hero-motion-gif {
+  display:block; width:100%; height:100%; object-fit:cover;
+  object-position:center 55%; filter:saturate(1.05) contrast(1.04);
+  image-rendering:auto;
+}
+.story-hero .hero-tint {
+  position:absolute; inset:0; pointer-events:none; z-index:-2;
+  background:
+     linear-gradient(180deg, rgba(84,28,81,.38) 0%, rgba(71,31,81,.17) 36%, rgba(33,34,39,.03) 56%, rgba(27,32,29,.48) 100%),
+     linear-gradient(90deg, rgba(72,35,75,.18) 0%, transparent 82%);
+}
+.story-hero .hero-grain { z-index:-1; opacity:.13; }
+.story-hero .hero-content {
+  position:relative; z-index:1;
+  display:flex; flex-direction:column; align-items:stretch;
+  padding-top:clamp(29px,4.2vh,56px); padding-bottom:75px;
+  min-height:inherit; width:min(calc(100% - 72px),1380px);
+}
+.story-hero .hero-content > * { max-width:none; }
+.hero-headline-meta { display:flex;justify-content:space-between;align-items:center;gap:15px;text-align:left; }
+.hero-edition { font:700 10px/1.5 var(--display);letter-spacing:.19em;text-shadow:0 1px 4px #4e2a4559; }
+.hero-meta-sep { opacity:.6; padding:0 9px; }
+.hero-heading-wrap { margin:clamp(25px,5vh,68px) auto 0;width:100%; }
+.story-hero .hero-pretitle { margin:0 0 15px;font:600 clamp(10px,.9vw,12px)/1.7 var(--display);text-transform:uppercase;letter-spacing:.24em;color:#fff8f1; }
+.story-hero .hero-main-title {
+  margin:0; padding:0;
+  max-width:none; width:100%;
+  font-family:var(--display); font-weight:900;
+  line-height:.99; letter-spacing:-.075em;
+  text-transform:uppercase;color:#fffaf4;
+  text-shadow: 0 4px 33px rgba(77,35,75,.3);
+}
+.story-hero .hero-title-line { display:block; white-space:nowrap; max-width:none; }
+.story-hero .hero-title-first { font-size:clamp(86px,13.3vw,204px);line-height:.96; }
+.story-hero .hero-title-middle { font-size:clamp(44px,6.05vw,96px);letter-spacing:-.065em;line-height:1.06; }
+.story-hero .hero-title-last { font-size:clamp(67px,10.05vw,155px);line-height:1.03; }
+.story-hero .hero-title-dot {color:#ffdb91;}
+.story-hero .hero-lower {
+  width:100%; margin-top:auto; padding-top:clamp(45px,10vh,120px);
+  display:flex; justify-content:space-between; align-items:flex-end;gap:38px;text-align:left;
+}
+.story-hero .hero-deck {
+  max-width:540px; margin:0;
+  padding:18px 21px 19px;
+  border:1px solid rgba(255,255,255,.2);
+  border-left:3px solid #ffe5c9;
+  border-radius:2px;
+  background:rgba(51,37,53,.6);backdrop-filter:blur(12px);
+  color:#fff7ea; font:400 clamp(14px,1.05vw,16px)/1.68 var(--sans);
+  letter-spacing:.003em;box-shadow:0 12px 30px #3d253824;
+}
+.hero-side {display:flex; flex-direction:column; gap:18px;align-items:flex-end; text-align:right;flex-shrink:0;}
+.hero-gif-label {display:flex;align-items:center;gap:14px;text-shadow:0 1px 14px #2d2b33;text-align:left;}
+.hero-gif-symbol {font-size:38px; line-height:1; color:#fff3ce;}
+.hero-gif-label strong {display:block;font:800 14px/1.5 var(--display);letter-spacing:.04em;}
+.hero-gif-label small {display:block;font:600 9px/1.9 var(--display);letter-spacing:.14em;}
+.hero-motion-toggle {
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid rgba(255,255,255,.55);border-radius:60px;
+  background:rgba(40,31,43,.53);color:#fff9ed;padding:10px 14px;
+  font:600 11px/1 var(--display);letter-spacing:.03em;
+  backdrop-filter:blur(10px);
+}
+.hero-motion-toggle:hover {background:rgba(40,31,43,.85);color:#fff;}
+.hero-motion-toggle-icon {font:700 15px/1 var(--display);}
+.story-hero .scroll-cue {position:absolute;left:0;bottom:20px;margin:0;font:700 10px var(--display);letter-spacing:.16em;color:#fff8ec;text-shadow:0 1px 9px #372a3a;}
+.story-hero .scroll-cue:hover {color:#fff;}
+.story-hero .hero-corner {bottom:21px;right:36px;color:#fff7e8;opacity:.8;font:600 9px var(--display);letter-spacing:.12em;text-shadow:0 1px 9px #372a3a;}
+
+/* Heading styles everywhere: use robust Vietnamese typography */
+.module-heading h3,.flash-info h4,.material-detail h4,.process-step strong {letter-spacing:-.03em;}
+
+@media (min-width:1600px) {
+  .story-hero .hero-content {width:min(calc(100% - 140px),1480px);}
+  .story-hero .hero-title-first {font-size:min(13vw,214px);}
+  .story-hero .hero-title-middle {font-size:min(6vw,100px);}
+  .story-hero .hero-title-last {font-size:min(10vw,165px);}
+}
+@media (max-width:1080px) {
+  .story-hero .hero-content {width:min(calc(100% - 46px),1200px);}
+  .story-hero .hero-title-first {font-size:13vw;}
+  .story-hero .hero-title-middle {font-size:6vw;}
+  .story-hero .hero-title-last {font-size:10vw;}
+  .story-hero .hero-deck {font-size:14px;max-width:500px;}
+  .hero-side {max-width:245px;}
+}
+@media (max-width:780px) {
+  .story-hero {min-height:730px;min-height:max(730px,calc(100svh - var(--head-height)));}
+  .story-hero .hero-content {width:calc(100% - 36px);padding-top:25px;padding-bottom:77px;}
+  .hero-headline-meta .secondary {display:none;}
+  .story-hero .hero-heading-wrap {margin-top:clamp(35px,9vh,75px);}
+  .story-hero .hero-pretitle {font-size:9px;letter-spacing:.15em;margin-bottom:13px;}
+  .story-hero .hero-title-first {font-size:clamp(68px,14.1vw,115px);}
+  .story-hero .hero-title-middle {font-size:clamp(30px,6.0vw,56px);}
+  .story-hero .hero-title-last {font-size:clamp(48px,10.0vw,78px);}
+  .story-hero .hero-motion-gif {object-position:60% center;}
+  .story-hero .hero-tint {background:linear-gradient(180deg,rgba(67,28,74,.54) 0%,rgba(60,30,72,.2) 45%,rgba(34,35,40,.58) 100%);}
+  .story-hero .hero-lower {gap:14px;flex-direction:column;align-items:stretch;padding-top:170px;}
+  .story-hero .hero-deck {font-size:14px;max-width:100%;line-height:1.7;}
+  .story-hero .hero-side {flex-direction:row;justify-content:space-between;align-items:center;max-width:none;text-align:left;gap:12px;}
+  .hero-gif-label strong {font-size:11px;}
+  .hero-gif-label small {font-size:8px;}
+  .hero-gif-symbol {font-size:25px;}
+  .story-hero .hero-corner {display:none;}
+}
+@media (max-width:480px) {
+  .story-hero {min-height:790px;min-height:max(790px,calc(100svh - var(--head-height)));}
+  .story-hero .hero-content {width:calc(100% - 30px);padding-top:21px;padding-bottom:65px;}
+  .hero-edition {font-size:9px;letter-spacing:.12em;}
+  .story-hero .hero-heading-wrap {margin-top:60px;}
+  .story-hero .hero-pretitle {font-size:8px;letter-spacing:.09em;}
+  .story-hero .hero-title-first {font-size:clamp(58px,14vw,74px);}
+  .story-hero .hero-title-middle {font-size:clamp(23px,5.93vw,32px);}
+  .story-hero .hero-title-last {font-size:clamp(39px,9.7vw,52px);}
+  .story-hero .hero-motion-gif {object-position:62% center;}
+  .story-hero .hero-lower {padding-top:210px;gap:13px;}
+  .story-hero .hero-deck {font-size:12.5px;line-height:1.6;padding:15px 16px;}
+  .hero-gif-label {gap:5px;}
+  .hero-gif-label strong {font-size:9px;}
+  .hero-gif-label small {font-size:6.8px;letter-spacing:.04em;}
+  .hero-motion-toggle {padding:9px 10px;gap:5px;}
+  .hero-motion-toggle-text {font-size:0;}
+  .hero-motion-toggle-icon {font-size:15px;}
+  .story-hero .scroll-cue {bottom:13px;font-size:9px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  .hero-motion-gif {transition:none!important;animation:none!important;}
+}
+
+
+/* ==============================================================
+   TƯ LIỆU DO ĐỘC GIẢ CUNG CẤP · gallery, video, infographic, nón thật
+   ============================================================== */
+.media-frame.has-media > img { display:block; width:100%; }
+.wide-media.has-media > img {aspect-ratio:16/9;object-fit:cover;max-height:730px;min-height:0;}
+.portrait-feature .portrait-media.has-media > img {aspect-ratio:5/4;object-fit:cover;object-position:67% center;max-height:560px;min-height:0;}
+.media-frame.has-media > video {display:block;width:100%;aspect-ratio:16/9;object-fit:contain;min-height:0;background:#171d19;}
+.interview-media.has-media > video {aspect-ratio:16/9;}
+.cultural-gallery {margin:45px auto 100px;}
+.cultural-gallery .module-index {margin-bottom:18px;}
+.cultural-gallery-grid {display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.cultural-gallery figure {margin:0;min-width:0;}
+.cultural-gallery figure img {display:block;width:100%;height:350px;object-fit:cover;}
+.cultural-gallery figcaption {padding:13px 2px 0;font-size:12px;line-height:1.7;color:#746c5f;}
+.infographic-spread {margin:85px auto 100px;}
+.infographic-spread .module-index {margin-bottom:19px;}
+.infographic-spread > img {width:100%;display:block;height:auto;border:1px solid #dacbb1;box-shadow:0 18px 50px rgba(49,53,42,.12);}
+.infographic-spread figcaption {padding:16px 5px;color:#756e61;font-size:12px;line-height:1.7;}
+.infographic-product {margin-top:0;margin-bottom:95px;}
+.compare-visual {background:#ded5c7;}
+.compare-before {background:radial-gradient(circle,#e6dbc8,#b6baa8);}
+.compare-after {background:radial-gradient(circle,#f4e0dc,#cf8b94);}
+#compare-before img,#compare-after img {object-fit:contain;padding:clamp(15px,4vw,40px);}
+.flash-art.has-image {background-size:contain!important;background-position:center;background-repeat:no-repeat;background-color:#f7efe5;}
+.flash-art.card-0.has-image,.flash-art.card-1.has-image,.flash-art.card-2.has-image,.flash-art.card-3.has-image {background-color:#f7efe5;}
+.feature-quote {display:block;background:transparent;max-width:1000px;}
+.feature-quote .graduation-media.has-media>img {display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:auto;min-height:0;}
+.feature-quote > blockquote {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;padding:0;margin:-1px;border:0;}
+.feature-quote figcaption {padding:12px 5px;}
+.process-video.has-media > video {aspect-ratio:16/10;}
+@media (max-width:780px) {
+  .cultural-gallery {margin:30px auto 75px;}
+  .cultural-gallery-grid {grid-template-columns:1fr;gap:35px;}
+  .cultural-gallery figure img {height:auto;aspect-ratio:16/10;}
+  .infographic-spread {margin:50px auto 65px;}
+  .infographic-product {margin-top:20px;}
+  .feature-quote {margin:50px auto 70px;}
+  #compare-before img,#compare-after img {padding:10px;}
+}
+
+
+.infographic-zoom {display:block;position:relative;cursor:zoom-in;}
+.infographic-zoom::after {content:"↗ XEM ĐỒ HỌA LỚN";position:absolute;right:16px;bottom:16px;padding:10px 13px;border-radius:3px;background:rgba(250,247,239,.95);font:700 10px var(--sans);letter-spacing:.06em;color:#3c4f3d;box-shadow:0 2px 16px #3333;}
+.infographic-zoom img {display:block;width:100%;height:auto;}
+@media(max-width:780px) {.feature-quote>blockquote {position:static;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;margin:0;padding:18px 20px 28px;background:#efe2d1;}.feature-quote>blockquote>span {font-size:52px;}.feature-quote>blockquote p {font-size:22px;line-height:1.6;}}
+
+  
+/* CHƯƠNG III · ảnh sắc nét, video kết và nút chơi minigame */
+.final-film {margin-top:80px;margin-bottom:112px;}
+.final-film .module-index {margin:0 0 15px;color:var(--terracotta);}
+.final-film h3 {font:400 clamp(35px,4.2vw,60px)/1.12 var(--serif);letter-spacing:-.035em;color:var(--olive-dark);max-width:930px;margin:0 0 16px;}
+.final-film h3 em {color:var(--terracotta);font-weight:400;}
+.final-film-deck {max-width:760px;color:var(--muted);font:clamp(17px,1.8vw,21px)/1.7 var(--serif);margin:0 0 30px;}
+.final-film-media {max-width:1150px;margin:0 auto;}
+.final-film-media>.media-placeholder,.final-film-media>video {width:100%;aspect-ratio:16/9;min-height:0;height:auto;background:#243328;}
+.final-film-media>video {display:block;object-fit:contain;}
+.final-film-media figcaption {font-size:12px;}
+.end-note-description {max-width:670px;margin:0 auto 30px;font:clamp(17px,1.7vw,21px)/1.7 var(--serif);color:#f2e4ca;}
+.end-actions {display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;}
+.end-note .end-game-cta {display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:19px clamp(22px,3.2vw,42px);background:#f0d59f;color:#283e32;border:1px solid #f0d59f;border-radius:100px;text-align:center;text-decoration:none;font:800 clamp(13px,1.5vw,17px)/1.45 var(--sans);letter-spacing:.065em;box-shadow:0 10px 26px rgba(0,0,0,.2);transition:background .2s,transform .2s,box-shadow .2s;}
+.end-note .end-game-cta:hover {background:#fff1d2;color:#283e32;transform:translateY(-3px);box-shadow:0 15px 32px rgba(0,0,0,.26);}
+.end-note .end-game-cta:focus-visible {outline:3px solid #fff;outline-offset:5px;}
+.end-note .end-game-cta span:first-child {font-size:20px;}
+.end-note .end-back-link {display:inline-block;padding:8px 4px;font-size:11px;letter-spacing:.12em;color:#f1dec2;border:0;border-bottom:1px solid #f1dec2;text-decoration:none;}
+.end-note .end-back-link:hover {background:transparent;color:white;border-bottom-color:white;}
+@media(max-width:780px) {.final-film{margin-top:55px;margin-bottom:70px}.final-film-deck{font-size:18px}.final-film-media figcaption{flex-direction:column}.end-note-description{padding:0 10px}.end-note .end-game-cta{width:min(100%,370px);padding:17px 20px;letter-spacing:.035em;}}
+
+/* FLASHCARD MỚI: 3 ảnh bổ sung, thẻ cuối là ảnh + lời kết */
+.flash-art.quote-card {position:relative;isolation:isolate;background-color:#244534!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important;}
+.flash-art.quote-card::before {content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,rgba(18,38,28,.25) 49%,rgba(13,29,22,.9) 100%);z-index:1;pointer-events:none;}
+.flash-quote-overlay {position:absolute;z-index:2;left:7%;right:7%;bottom:18px;display:flex;flex-direction:column;gap:7px;text-align:center;color:#fff9ec;text-shadow:0 2px 12px rgba(0,0,0,.55);}
+.flash-quote-overlay small {font:700 10px/1.3 var(--sans);letter-spacing:.14em;color:#f7dca1;}
+.flash-quote-overlay span {font:600 clamp(16px,1.85vw,23px)/1.35 var(--serif);text-wrap:balance;}
+.flash-card.is-quote-card .flash-info {background:#274636;color:#fff7e9;}
+.flash-card.is-quote-card .flash-info h4 {color:#fff7e9;}
+.flash-card.is-quote-card .flash-info>span {color:#eac995;}
+.flash-card.is-quote-card .flash-info p {color:#d6e5d2;}
+@media(max-width:480px) {.flash-quote-overlay {bottom:8px;left:5%;right:5%;gap:4px}.flash-quote-overlay small{font-size:8px}.flash-quote-overlay span{font-size:15px;line-height:1.3}}
+</style>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Đi đến nội dung chính</a>
+  <svg aria-hidden="true" class="svg-defs" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="hat-gradient" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="#fff6d8"/><stop offset=".5" stop-color="#dfcba0"/><stop offset="1" stop-color="#a48450"/>
+      </linearGradient>
+      <linearGradient id="hat-modern-gradient" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="#ef94a1"/><stop offset=".48" stop-color="#f4cc83"/><stop offset="1" stop-color="#9fb6a0"/>
+      </linearGradient>
+      <symbol id="hat-traditional" viewBox="0 0 620 470">
+        <ellipse cx="312" cy="383" rx="264" ry="36" fill="#7d6337" opacity=".24"/>
+        <path d="M310 42 C308 39 304 43 299 51 L67 355 C113 398 211 419 309 419 C422 419 515 394 554 355 L322 51 Z" fill="url(#hat-gradient)" stroke="#957748" stroke-width="3"/>
+        <path d="M310 43 67 355 M310 43 554 355 M310 43 173 392 M310 43 449 393 M310 43 308 420" fill="none" stroke="#947649" stroke-width="2" opacity=".48"/>
+        <path d="M123 279 Q310 348 500 279 M92 324 Q310 402 530 324 M67 355 Q310 456 554 355" fill="none" stroke="#aa9060" stroke-width="3" opacity=".7"/>
+        <path d="M308 55 200 364 M310 55 408 365 M310 58 253 395 M310 58 363 395" fill="none" stroke="#fff4d4" stroke-width="2" opacity=".45"/>
+        <ellipse cx="311" cy="411" rx="245" ry="14" fill="none" stroke="#8c7146" stroke-width="6"/>
+      </symbol>
+      <symbol id="hat-modern" viewBox="0 0 620 470">
+        <ellipse cx="312" cy="383" rx="264" ry="36" fill="#7b4660" opacity=".2"/>
+        <path d="M310 42 67 355 C115 400 217 420 310 420 C422 420 511 395 554 355 Z" fill="url(#hat-modern-gradient)" stroke="#a36169" stroke-width="3"/>
+        <path d="M310 54 67 355 M310 54 554 355 M310 54 184 389 M310 54 438 393" fill="none" stroke="#fff8e9" stroke-width="2" opacity=".6"/>
+        <path d="M109 311 Q310 385 511 311 M67 355 Q310 456 554 355" fill="none" stroke="#ca6c7c" stroke-width="4" opacity=".75"/>
+        <path d="M270 283 C257 248 275 229 293 235 C309 240 319 261 308 281 C321 247 348 247 353 268 C354 290 339 301 309 316 C276 300 270 287 270 283Z" fill="#fff5e4" opacity=".83"/>
+        <path d="M309 420 Q205 449 176 427 Q162 414 169 401 Q207 387 277 420 M310 420 Q405 451 449 428 Q458 410 447 402 Q407 384 337 420" fill="#e3a3ad" stroke="#bb6e7b" stroke-width="2"/>
+        <ellipse cx="311" cy="410" rx="245" ry="14" fill="none" stroke="#a66375" stroke-width="6"/>
+      </symbol>
+      <symbol id="needle" viewBox="0 0 100 100"><path d="M17 82 83 16" fill="none" stroke="currentColor" stroke-width="2.8"/><ellipse cx="82" cy="17" rx="4" ry="8" transform="rotate(45 82 17)" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 84 Q3 39 33 22 Q49 14 60 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="4 4"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#dau-trang" aria-label="Nón lá, trở về đầu bài"><span class="brand-mark" aria-hidden="true">◒</span><span><strong>NÓN LÁ</strong><small>LONGFORM · 03 KỲ</small></span></a>
+    <nav class="chapter-nav" aria-label="Chọn kỳ bài">
+      <a href="#ky-1" class="nav-link is-current" data-chapter="ky-1"><span>01</span> Khởi nguồn</a>
+      <a href="#ky-2" class="nav-link" data-chapter="ky-2"><span>02</span> Người giữ nghề</a>
+      <a href="#ky-3" class="nav-link" data-chapter="ky-3"><span>03</span> Thế hệ tiếp nối</a>
+    </nav>
+    <label class="mobile-select-wrap"><span class="sr-only">Chọn kỳ bài</span><select id="mobile-chapters" aria-label="Chọn kỳ bài"><option value="ky-1">Kỳ I · Khởi nguồn</option><option value="ky-2">Kỳ II · Người giữ nghề</option><option value="ky-3">Kỳ III · Thế hệ tiếp nối</option></select></label>
+    <button type="button" class="quiet-btn" id="share-button" title="Sao chép liên kết trang"><span aria-hidden="true">↗</span><span class="share-label">Chia sẻ</span></button>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <div id="dau-trang" class="page-anchor"></div>
+    <section class="story-hero chapter-tracker" id="ky-1" data-chapter="ky-1" aria-labelledby="title-1">
+      <!-- Hình động 9 khung hình: thay đường dẫn src nếu muốn dùng GIF riêng. -->
+      <div class="hero-motion" aria-hidden="true">
+        <img id="hero-gif" class="hero-motion-gif" src="hanh-trinh-la-co-den-non-la.gif" data-gif="hanh-trinh-la-co-den-non-la.gif" data-still="hanh-trinh-la-co-den-non-la-tinh.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-tint" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content shell">
+        <div class="hero-headline-meta">
+          <span class="hero-edition">CHUYÊN ĐỀ MULTIMEDIA <span class="hero-meta-sep">/</span> KỲ 01 — 03</span>
+          <span class="hero-edition secondary">LÀNG CHUÔNG · HÀ NỘI</span>
+        </div>
+        <div class="hero-heading-wrap">
+          <p class="hero-pretitle">Một chiếc nón. Một hành trình. Nhiều thế hệ.</p>
+          <h1 id="title-1" class="hero-main-title">
+            <span class="hero-title-line hero-title-first">NÓN LÁ</span>
+            <span class="hero-title-line hero-title-middle">ĐƯỜNG KIM ĐI QUA</span>
+            <span class="hero-title-line hero-title-last">NĂM THÁNG<span class="hero-title-dot">.</span></span>
+          </h1>
+        </div>
+        <div class="hero-lower">
+          <p class="hero-deck">Giữa nhịp sống đổi thay, làng Chuông (Hà Nội) vẫn lưu giữ những kỹ thuật làm nón lá truyền thống qua nhiều thế hệ. Từ đôi bàn tay khéo léo của người thợ, từng chiếc nón được tạo nên không chỉ để che nắng, che mưa mà còn lưu giữ dấu ấn của một nghề thủ công gắn bó lâu đời với đời sống người Việt.</p>
+          <div class="hero-side">
+            <div class="hero-gif-label"><span class="hero-gif-symbol" aria-hidden="true">✳</span><span><strong>LÁ CỌ → NÓN LÁ</strong><small>9 KHUNG HÌNH · HÀNH TRÌNH LÀM NÓN</small></span></div>
+            <button id="hero-motion-toggle" type="button" class="hero-motion-toggle" aria-pressed="false" aria-label="Tạm dừng ảnh động"><span class="hero-motion-toggle-icon" aria-hidden="true">Ⅱ</span><span class="hero-motion-toggle-text">Tạm dừng chuyển động</span></button>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#noi-dung-1"><span class="scroll-line"></span><span>CUỘN ĐỂ KHÁM PHÁ</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <span class="hero-corner">MỘT LONGFORM VỀ DI SẢN VÀ SỰ TIẾP NỐI</span>
+    </section>
+
+    <section class="paper-section" id="noi-dung-1" aria-label="Nội dung kỳ một">
+      <div class="section-topline shell"><span>CHƯƠNG 01</span><span>CHIẾC NÓN TRONG KÝ ỨC</span></div>
+      <article class="prose reveal">
+        <p class="lead">Trước khi trở thành một hình ảnh quen thuộc trong các hoạt động văn hóa, nghệ thuật hay những sản phẩm lưu niệm, nón lá vốn là vật dụng thiết yếu trong đời sống của người Việt.</p>
+        <h2>Từ vật dụng đời thường đến <em>biểu tượng văn hóa</em></h2>
+        <p>Trên những cánh đồng, ở các phiên chợ quê hay dọc những con đường làng, hình ảnh chiếc nón theo chân người nông dân, người phụ nữ đi chợ, những gánh hàng rong đã trở thành một phần của đời sống thường nhật.</p>
+      </article>
+      <figure class="wide-media media-frame reveal" data-media="image" data-src="anh-cho-que.jpg" data-alt="Người đội nón lá đi chợ giữa các sạp hàng ở chợ quê" data-label="ẢNH TOÀN MÀN HÌNH · ĐỜI SỐNG XƯA">
+        <div class="media-placeholder"><span class="media-glyph">✳</span><span>VỊ TRÍ ẢNH TƯ LIỆU</span><small>Gợi ý: chợ quê, đồng lúa, người phụ nữ đội nón</small></div>
+      </figure>
+      <article class="prose reveal">
+        <p>Với nguyên liệu chủ yếu từ lá, tre và chỉ khâu, chiếc nón ra đời từ những vật liệu gần gũi với thiên nhiên. Cấu tạo tưởng chừng đơn giản nhưng để làm nên một chiếc nón cân đối, bền đẹp lại đòi hỏi nhiều công đoạn tỉ mỉ, từ chọn lá, phơi lá, là lá đến vót vành, xếp khuôn và khâu nón.</p>
+        <p>Theo thời gian, chiếc nón vượt ra khỏi công năng che nắng, che mưa để trở thành một biểu tượng văn hóa. Cùng với tà áo dài, nón lá góp phần tạo nên hình ảnh người phụ nữ Việt Nam trong thơ ca, hội họa và ký ức của nhiều thế hệ. Đằng sau dáng nón giản dị ấy là câu chuyện về lao động thủ công và những làng nghề đã góp phần gìn giữ nét đẹp truyền thống.</p>
+      </article>
+
+
+      <section class="cultural-gallery shell reveal" aria-labelledby="visual-culture-title">
+        <div class="module-index">NÓN LÁ TRONG ĐỜI SỐNG VĂN HÓA</div>
+        <h3 id="visual-culture-title" class="sr-only">Nón lá trong nghệ thuật và trang phục</h3>
+        <div class="cultural-gallery-grid">
+          <figure><img src="anh-bieu-dien-non-la.jpg" alt="Nhóm người mặc áo dài biểu diễn với nón lá trên sân khấu" loading="lazy" decoding="async"></figure>
+          <figure><img src="anh-ao-dai-non-la.jpg" alt="Người mặc áo dài trắng đội nón lá trên phố cổ" loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="interactive-wrap shell reveal" aria-labelledby="material-title">
+        <div class="module-heading"><span class="module-index">TƯƠNG TÁC 01</span><h3 id="material-title">Điều gì tạo nên <em>một chiếc nón?</em></h3><p>Chạm vào từng chất liệu trên chiếc nón để khám phá vai trò của chúng.</p></div>
+        <div class="material-lab">
+          <div class="material-art" aria-label="Minh họa chiếc nón và ba điểm chọn chất liệu">
+            <svg class="material-hat" viewBox="0 0 620 470" aria-hidden="true"><use href="#hat-traditional"/></svg>
+            <button class="hotspot is-active" type="button" data-material="leaf" style="--x:53%;--y:33%" aria-pressed="true"><span>1</span><span class="sr-only">Khám phá lá nón</span></button>
+            <button class="hotspot" type="button" data-material="bamboo" style="--x:71%;--y:79%" aria-pressed="false"><span>2</span><span class="sr-only">Khám phá tre làm vành</span></button>
+            <button class="hotspot" type="button" data-material="thread" style="--x:38%;--y:68%" aria-pressed="false"><span>3</span><span class="sr-only">Khám phá chỉ khâu</span></button>
+          </div>
+          <div class="material-detail" aria-live="polite"><span id="material-counter">01 / 03 — CHẤT LIỆU</span><div id="material-symbol" class="material-symbol">✺</div><h4 id="material-name">Lá nón</h4><p id="material-desc">Lớp lá được chọn, phơi, là phẳng rồi xếp lên khuôn. Đây là bề mặt tạo nên vẻ thanh thoát và khả năng che nắng, che mưa của chiếc nón.</p><div class="material-choice"><button type="button" data-material="leaf" class="is-active">Lá</button><button type="button" data-material="bamboo">Tre</button><button type="button" data-material="thread">Chỉ</button></div></div>
+        </div>
+      </section>
+
+      <article class="prose reveal">
+        <h2>Làng Chuông và những bàn tay <em>gìn giữ nghề xưa</em></h2>
+        <p>Nhắc đến nghề làm nón truyền thống ở miền Bắc, làng Chuông là một trong những địa danh tiêu biểu. Nghề làm nón nơi đây gắn với đời sống của nhiều gia đình, được truyền từ thế hệ trước sang thế hệ sau thông qua quá trình học nghề và thực hành ngay trong mỗi nếp nhà.</p>
+        <p>Trong ký ức về một làng nghề truyền thống, hình ảnh người thợ ngồi bên khuôn nón, đôi tay đều đặn đưa từng đường kim qua lớp lá đã trở nên quen thuộc. Công việc ấy đòi hỏi sự kiên trì và độ chính xác cao. Những chiếc lá phải được xử lý cẩn thận để giữ độ phẳng, các vòng tre phải được vót đều, còn từng mũi khâu cần đủ chắc và đều để tạo nên dáng nón tròn, thanh thoát.</p>
+      </article>
+      <div class="portrait-feature shell reveal">
+        <figure class="media-frame portrait-media" data-media="image" data-src="anh-nghe-nhan.jpg" data-alt="Một người thợ làm nón đang chằm nón bên sân nhà truyền thống" data-label="ẢNH CHÂN DUNG · NGHỆ NHÂN"><div class="media-placeholder"><span class="media-glyph">✳</span><span>VỊ TRÍ ẢNH NGHỆ NHÂN</span><small>Chân dung bên khuôn nón / cận cảnh đôi tay khâu</small></div></figure>
+        <div class="portrait-copy"><span class="eyebrow">BÀN TAY GIỮ NGHỀ</span><p>Với nghệ nhân Phạm Thị Vấn, người làm nghề tại làng Chuông, công việc khâu nón còn đại diện cho những kỹ năng thủ công được các thế hệ thợ gìn giữ. Để hoàn thiện một sản phẩm, người thợ không chỉ cần đôi tay khéo léo mà còn phải am hiểu đặc tính của nguyên liệu, biết điều chỉnh từng công đoạn để chiếc nón đạt được hình dáng và chất lượng mong muốn.</p><p>Giá trị của nghề làm nón vì thế không chỉ nằm ở sản phẩm cuối cùng mà còn ở hệ thống kỹ năng, kinh nghiệm được tích lũy và trao truyền. Mỗi chiếc nón hoàn thiện là kết quả của nhiều công đoạn nối tiếp nhau, phản ánh sự công phu của một nghề thủ công truyền thống.</p></div>
+      </div>
+      <article class="prose reveal">
+        <h2>Khi đường kim lưu giữ <em>ký ức một làng nghề</em></h2>
+        <p>Trong đời sống trước đây, nghề làm nón không chỉ tạo ra những vật dụng phục vụ sinh hoạt mà còn góp phần mang lại nguồn thu nhập cho các hộ gia đình. Những chiếc nón được làm ra từ đôi bàn tay người thợ, theo các phiên chợ và hoạt động buôn bán để đến với người sử dụng.</p>
+        <p>Cũng từ những công việc tưởng chừng giản đơn ấy, nghề làm nón dần trở thành một phần trong nếp sống và bản sắc của làng Chuông. Kỹ thuật làm nghề được lưu giữ không chỉ bằng những lời chỉ dẫn mà còn thông qua việc quan sát, thực hành và tiếp nối kinh nghiệm của thế hệ đi trước.</p>
+        <p>Câu chuyện của nghệ nhân Phạm Thị Vân là một lát cắt để nhìn lại giá trị của những người thợ thủ công trong hành trình gìn giữ nghề truyền thống. Họ không chỉ làm ra những chiếc nón phục vụ đời sống mà còn góp phần bảo tồn tri thức nghề nghiệp và những giá trị văn hóa gắn liền với mỗi sản phẩm.</p>
+        <p>Trải qua những thay đổi trong nhu cầu sử dụng và thị hiếu, chiếc nón lá ngày nay không còn giữ vị trí phổ biến như trong đời sống trước kia. Tuy nhiên, những kỹ thuật tạo nên chiếc nón truyền thống vẫn là di sản đáng trân trọng, bởi đó là thành quả lao động và sự sáng tạo của nhiều thế hệ.</p>
+      </article>
+      <aside class="statement reveal"><span class="statement-mark">“</span><p>Từ những đường kim của người đi trước, câu chuyện về chiếc nón lá chưa khép lại. Những giá trị được gìn giữ qua năm tháng đang trở thành nền tảng để thế hệ tiếp nối tìm kiếm một hướng đi mới cho nghề truyền thống.</p></aside>
+      <a class="next-chapter" href="#ky-2"><span>ĐỌC TIẾP KỲ II</span><strong>Một đời dưới vành nón</strong><span class="next-arrow" aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="chapter-hero chapter-hero-2 chapter-tracker" id="ky-2" data-chapter="ky-2" aria-labelledby="title-2"><div class="chapter-hero-inner shell"><span class="eyebrow light">KỲ II / NGƯỜI GIỮ NGHỀ</span><div class="chapter-hero-grid"><div><p class="chapter-hero-number">02 <span>/ 03</span></p><h2 id="title-2">MỘT ĐỜI <em>DƯỚI VÀNH NÓN</em></h2><p class="chapter-hero-sentence">Có những người dành cả cuộc đời để làm nên một vật dụng giản dị. Và có những vật dụng, nhờ những con người ấy, mà trở thành một phần ký ức của quê hương.</p></div><div class="chapter-hero-art" aria-hidden="true"><svg viewBox="0 0 620 470"><use href="#hat-traditional"/></svg></div></div></div></section>
+
+    <section class="paper-section second-content" aria-label="Nội dung kỳ hai">
+      <article class="prose reveal"><p class="lead">Trải qua nhiều thế hệ, nghề làm nón lá tại làng Chuông (Thanh Oai, Hà Nội) vẫn được duy trì như một nét đặc trưng trong đời sống văn hóa địa phương.</p><p>Tuy nhiên, trước sự thay đổi của nhu cầu thị trường và xu hướng lựa chọn nghề nghiệp của lao động trẻ, việc bảo tồn và phát triển nghề truyền thống đang đặt ra nhiều thách thức. Câu chuyện của bà Phạm Thị Vấn, người có nhiều năm gắn bó với nghề làm nón, phần nào phản ánh những nỗ lực gìn giữ và thích ứng của làng nghề hiện nay.</p><h2>Nghề truyền thống được lưu giữ <em>qua nhiều thế hệ</em></h2><p>Làng Chuông từ lâu được biết đến là một trong những địa phương có nghề làm nón lá truyền thống tại Hà Nội. Với đặc trưng sử dụng nguyên liệu lá và khung tre, sản phẩm nón làng Chuông được tạo nên qua nhiều công đoạn thủ công, đòi hỏi sự tỉ mỉ và kinh nghiệm của người thợ.</p><p>Sinh ra trong gia đình có nhiều thế hệ làm nón, bà Phạm Thị Vấn đã tiếp xúc với nghề từ nhỏ. Những kỹ thuật như chọn lá, làm vành, lợp lá và khâu nón được truyền dạy trực tiếp trong quá trình lao động sản xuất.</p><p>Chia sẻ về quá trình học nghề, bà Vấn cho biết:</p></article>
+      <blockquote class="pullquote reveal"><span class="quote-mark">“</span><p>Trước đây, nghề làm nón chủ yếu được truyền từ thế hệ này sang thế hệ khác trong gia đình. Người đi trước hướng dẫn người đi sau qua từng công đoạn. Để làm được một chiếc nón đạt yêu cầu, người thợ phải có thời gian rèn luyện và tích lũy kinh nghiệm.</p><footer>— Phạm Thị Vấn</footer></blockquote>
+      <article class="prose reveal"><p>Theo bà Vấn, yếu tố quan trọng trong sản xuất nón truyền thống không chỉ là kỹ thuật mà còn là sự cẩn trọng, đặc biệt ở công đoạn khâu nón. Đường khâu phải đều, chắc chắn, đồng thời bảo đảm tính thẩm mỹ và độ bền của sản phẩm.</p></article>
+      <section class="process-section reveal" aria-labelledby="process-title"><div class="shell"><div class="module-heading"><span class="module-index">TRẢI NGHIỆM TƯƠNG TÁC 02</span><h3 id="process-title">Theo dấu <em>năm công đoạn</em></h3><p>Bấm từng công đoạn để xem chú thích. Nhấn các công đoạn để xem chú thích và chuyển đến đoạn tương ứng trong video tư liệu.</p></div><div class="process-layout"><div class="process-sticky"><figure class="media-frame process-video" data-media="video" data-src="video-1-quy-trinh-lam-non.mp4" data-poster="thumbnail-quy-trinh.jpg" data-label="VIDEO 01 · 64 GIÂY" data-times="2,22,33,43,54"><div class="media-placeholder"><span class="play-outline" aria-hidden="true">▶</span><span>VỊ TRÍ VIDEO QUY TRÌNH LÀM NÓN</span><small>Chọn lá · Làm vành · Lợp lá · Khâu · Hoàn thiện</small></div></figure><div class="process-caption" aria-live="polite"><span id="step-counter">01 / 05</span><strong id="step-title">Chọn và xử lý lá</strong><p id="step-desc">Chọn lá thích hợp, phơi và là phẳng để tạo bề mặt mịn, dễ xếp vào khuôn.</p><div class="mini-progress"><span id="step-progress"></span></div></div></div><div class="process-steps" role="group" aria-label="Chọn công đoạn làm nón"><button type="button" class="process-step is-active" data-step="0" aria-pressed="true"><span>01</span><strong>Chọn lá</strong><small>Nguyên liệu và xử lý bề mặt</small></button><button type="button" class="process-step" data-step="1" aria-pressed="false"><span>02</span><strong>Làm vành</strong><small>Vót tre, tạo những vòng tròn</small></button><button type="button" class="process-step" data-step="2" aria-pressed="false"><span>03</span><strong>Lợp lá</strong><small>Phủ lá đều lên khuôn nón</small></button><button type="button" class="process-step" data-step="3" aria-pressed="false"><span>04</span><strong>Khâu nón</strong><small>Đường kim giữ các lớp lá</small></button><button type="button" class="process-step" data-step="4" aria-pressed="false"><span>05</span><strong>Hoàn thiện</strong><small>Kiểm tra dáng nón và độ bền</small></button></div></div></div></section>
+
+      <figure class="infographic-spread shell reveal" aria-label="Infographic năm bước làm nón lá">
+        <div class="module-index">ĐỒ HỌA / QUY TRÌNH LÀM NÓN</div>
+        <a class="infographic-zoom" href="infographic-quy-trinh.png" target="_blank" rel="noopener" title="Mở đồ họa trong thẻ mới"><img src="infographic-quy-trinh.png" loading="lazy" decoding="async" alt="Infographic minh họa năm bước làm nón: chọn và xử lý lá, làm vành, lợp lá, khâu nón, hoàn thiện; có thời gian và mức giá tham khảo trong đồ họa."></a>
+        
+      </figure>
+
+      <section class="game-section shell reveal" aria-labelledby="game-title"><div class="game-intro"><span class="module-index">MINI GAME / THỬ TÀI</span><h3 id="game-title">Bạn có nhớ <em>thứ tự làm nón?</em></h3><p>Chọn các bước theo đúng trình tự, từ nguyên liệu đến khi hoàn thành chiếc nón.</p><button id="game-reset" class="text-button" type="button">↻ Chơi lại</button></div><div class="game-area"><div class="game-track" id="game-track" aria-label="Các bước đã chọn"></div><div class="game-options" id="game-options"></div><p class="game-feedback" id="game-feedback" role="status" aria-live="polite">Hãy chọn bước đầu tiên.</p></div></section>
+      <article class="prose reveal"><h2>Thách thức trong việc <em>duy trì nghề làm nón</em></h2><p>Cùng với quá trình phát triển kinh tế – xã hội, nhu cầu sử dụng nón lá trong sinh hoạt hằng ngày có nhiều thay đổi. Sự phổ biến của các sản phẩm thay thế, yêu cầu về mẫu mã và sự dịch chuyển lao động sang các ngành nghề khác đã tác động đến hoạt động sản xuất tại các làng nghề truyền thống.</p><p>Đối với nghề làm nón, một trong những khó khăn là thời gian sản xuất kéo dài, nhiều công đoạn phụ thuộc vào lao động thủ công, trong khi giá trị kinh tế của các sản phẩm phổ thông còn hạn chế. Điều này ảnh hưởng đến khả năng thu hút lực lượng lao động trẻ tham gia và kế thừa nghề.</p><p>Đề cập đến vấn đề này, bà Phạm Thị Vấn chia sẻ:</p></article>
+      <blockquote class="pullquote reveal"><span class="quote-mark">“</span><p>Hiện nay, người trẻ có nhiều lựa chọn việc làm với mức thu nhập khác nhau. Nghề làm nón đòi hỏi sự kiên trì, trong khi thu nhập chưa phải lúc nào cũng tương xứng với công sức bỏ ra. Muốn duy trì nghề lâu dài thì phải có thị trường tiêu thụ ổn định và tạo được điều kiện để người lao động gắn bó.</p><footer>— Phạm Thị Vấn</footer></blockquote>
+      <article class="prose reveal"><p>Thực tế này cho thấy, công tác bảo tồn làng nghề không thể chỉ tập trung vào việc lưu giữ kỹ thuật truyền thống mà cần gắn với giải pháp nâng cao giá trị sản phẩm, mở rộng thị trường và bảo đảm sinh kế cho người lao động.</p><h2>Đổi mới sản phẩm gắn với <em>bảo tồn giá trị truyền thống</em></h2><p>Trước những thay đổi của thị trường, việc đa dạng hóa sản phẩm được xem là một hướng đi nhằm duy trì hoạt động sản xuất tại các làng nghề.</p><p>Bên cạnh dòng nón lá truyền thống, gia đình bà Phạm Thị Vấn đã tìm hướng phát triển các sản phẩm có sự điều chỉnh về kiểu dáng, chất liệu và mục đích sử dụng, phục vụ nhu cầu trang trí, quà tặng và hoạt động văn hóa, du lịch.</p><p>Theo bà Vấn, quá trình đổi mới phải được thực hiện trên cơ sở duy trì các kỹ thuật cốt lõi của nghề:</p></article>
+      <blockquote class="pullquote reveal"><span class="quote-mark">“</span><p>Sản phẩm có thể thay đổi để phù hợp với nhu cầu người tiêu dùng, nhưng các kỹ thuật truyền thống vẫn cần được duy trì. Việc đổi mới phải góp phần nâng cao giá trị chiếc nón, đồng thời giữ được đặc trưng của nghề làm nón làng Chuông.</p><footer>— Phạm Thị Vấn</footer></blockquote>
+      <article class="prose reveal"><p>Việc kết hợp giữa bảo tồn và phát triển sản phẩm không chỉ góp phần đa dạng hóa đầu ra mà còn tạo thêm cơ hội quảng bá giá trị văn hóa làng nghề tới công chúng.</p><h2>Kế thừa <em>nghề truyền thống</em></h2><p>Bên cạnh những nỗ lực duy trì hoạt động sản xuất, việc chuyển giao kỹ thuật và kinh nghiệm cho thế hệ tiếp theo giữ vai trò quan trọng đối với sự phát triển bền vững của nghề làm nón.</p><p>Tuy nhiên, trong bối cảnh hiện nay, kế thừa nghề truyền thống không nhất thiết đồng nghĩa với việc thế hệ trẻ tiếp tục toàn bộ phương thức sản xuất của người đi trước. Việc ứng dụng công nghệ, thiết kế sản phẩm và truyền thông số cũng có thể trở thành những hướng tiếp cận mới.</p><p>Tại gia đình bà Vấn, con gái bà là Lê Thị Thu Hà đã tham gia vào hoạt động đổi mới thiết kế và quảng bá sản phẩm nón lá thông qua các công cụ truyền thông hiện đại.</p><p>Đây là một ví dụ cho thấy sự kết hợp giữa kinh nghiệm sản xuất của thế hệ trước và tư duy sáng tạo của người trẻ có thể mở ra hướng phát triển mới cho nghề thủ công truyền thống.</p></article>
+      <figure class="wide-media media-frame reveal" data-media="video" data-src="video-3-nghe-nhan-lao-lang.mp4" data-poster="poster-video-nghe-nhan.jpg" data-label="VIDEO 03 · NGHỆ NHÂN"><div class="media-placeholder"><span class="play-outline">▶</span><span>VỊ TRÍ VIDEO TRUYỀN NGHỀ</span><small>Phỏng vấn nghệ nhân và cảnh nối từ khâu nón sang thiết kế trên máy tính</small></div></figure>
+      <a class="next-chapter next-chapter-green" href="#ky-3"><span>ĐỌC TIẾP KỲ III</span><strong>Khi người trẻ viết tiếp câu chuyện</strong><span class="next-arrow" aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="chapter-hero chapter-hero-3 chapter-tracker" id="ky-3" data-chapter="ky-3" aria-labelledby="title-3"><div class="chapter-hero-inner shell"><span class="eyebrow light">KỲ III / THẾ HỆ TIẾP NỐI</span><div class="chapter-hero-grid"><div><p class="chapter-hero-number">03 <span>/ 03</span></p><h2 id="title-3">TỪ GIỮ GÌN <em>ĐẾN PHÁT TRIỂN</em></h2><p class="chapter-hero-sentence">Người trẻ đang làm gì với nón lá?</p></div><div class="chapter-hero-art modern-art" aria-hidden="true"><svg viewBox="0 0 620 470"><use href="#hat-modern"/></svg></div></div></div></section>
+
+    <section class="paper-section third-content" aria-label="Nội dung kỳ ba">
+      <article class="prose reveal"><p class="lead">Di sản không đồng nghĩa với theo lối mòn trong quá khứ.</p><p>Tại làng Chuông, bạn Lê Thị Thu Hà (22 tuổi) là cháu ngoại của bà Phạm Thị Vấn, tốt nghiệp chuyên ngành Marketing tại Học viện Công nghệ Bưu chính Viễn thông, đang kế thừa và lan tỏa hình ảnh nón hiện đại, tiếp cận đến nhiều bạn trẻ.</p></article>
+      <div class="feature-quote shell reveal"><figure class="media-frame graduation-media" data-media="image" data-src="anh-thu-ha-tot-nghiep-sac-net.jpg" data-alt="Ảnh thiết kế người trẻ đội nón lá, cầm bằng tốt nghiệp và bó hoa hướng dương, có chữ trích dẫn" data-label="ẢNH TỐT NGHIỆP · LÊ THỊ THU HÀ"><div class="media-placeholder"><span class="media-glyph">✳</span><span>VỊ TRÍ ẢNH TỐT NGHIỆP</span><small>Chân dung Thu Hà cầm bằng tốt nghiệp</small></div></figure><blockquote><span>“</span><p>Tôi học Marketing không phải để rời đi, mà để trở về và viết tiếp câu chuyện của nón làng Chuông bằng ngôn ngữ của thế hệ mình.</p><footer>— Lê Thị Thu Hà</footer></blockquote></div>
+      <article class="prose reveal"><p>Ngay từ khi được tiếp xúc với các kiến thức chuyên ngành về marketing trên giảng đường, Hà đã nhận thức được rằng nghề làm nón truyền thống của quê hương có thể tiếp cận đến nhiều người hơn nữa thông qua mạng xã hội cũng như sàn thương mại điện tử, thay vì chỉ giữ lối mòn bán buôn cho thương lái.</p></article>
+      <div class="interview-block shell reveal"><figure class="media-frame interview-media" data-media="video" data-src="video-2-nguoi-tre-noi-nghiep.mp4" data-poster="poster-video-nguoi-tre.jpg" data-label="VIDEO PHỎNG VẤN · THU HÀ (01)"><div class="media-placeholder"><span class="play-outline">▶</span><span>VỊ TRÍ PHỎNG VẤN THU HÀ</span><small>Hành trình mang xưởng nón của bà lên mạng</small></div></figure><details class="transcript"><summary>Đọc nội dung phỏng vấn <span>＋</span></summary><p>“Từ bé đến lớn mỗi khi được nghỉ học em sẽ phụ bà làm nón... Hồi đó xót bà lắm vì nón làm ra cứ bị thương lái ép giá rẻ mạt. Lúc đỗ đại học học về Marketing, em mới nhận ra: Chợ truyền thống không phải là con đường duy nhất nữa. Thế là em quyết định 'bê' cả xưởng nón của bà lên mạng. Mình có Facebook, có TikTok Shop, tại sao phải chờ thương lái đến tận nhà thu mua? Em muốn tự tay đưa chiếc nón của làng Chuông đi tìm tệp khách hàng đa dạng hơn, bằng đúng ngôn ngữ và công cụ của thế hệ trẻ chúng em.”</p></details></div>
+      <article class="prose reveal"><p>Với một người trẻ đam mê đổi mới, Hà không chỉ dừng lại ở việc hiện thực hóa ý tưởng đưa sản phẩm của gia đình lên nền tảng số. Lê Thị Thu Hà đã sáng tạo, đổi mới chiếc nón lá truyền thống với những màu sắc bắt nhịp xu hướng của giới trẻ. Bắt trúng thị hiếu giới trẻ, mặt nón truyền thống hóa thành bảng pha màu hiện đại.</p></article>
+
+      <section class="compare-section shell reveal" aria-labelledby="compare-title"><div class="module-heading"><span class="module-index">TƯƠNG TÁC 03 / TRƯỚC & SAU</span><h3 id="compare-title">Cùng một dáng nón. <em>Hai ngôn ngữ thiết kế.</em></h3><p>Kéo thanh trượt để đối chiếu ảnh nón truyền thống và ảnh nón cách điệu màu hồng bạn cung cấp.</p></div><div class="compare-visual" id="compare-visual" style="--split:50%"><div class="compare-layer compare-after" id="compare-after" data-image="non-lua-la-hong-hoa.jpg"><span class="compare-corner">SAU · PHỐI MÀU HIỆN ĐẠI</span></div><div class="compare-layer compare-before" id="compare-before" data-image="non-truyen-thong.jpg"><span class="compare-corner">TRƯỚC · NÓN TRUYỀN THỐNG</span></div><div class="compare-divider" aria-hidden="true"><span>↔</span></div><label for="compare-slider" class="sr-only">Kéo để so sánh nón truyền thống và nón hiện đại</label><input id="compare-slider" type="range" min="0" max="100" value="50" aria-label="Tỷ lệ hiển thị nón truyền thống" aria-valuetext="50 phần trăm nón truyền thống"></div></section>
+
+
+      <figure class="infographic-spread infographic-product shell reveal" aria-label="Infographic so sánh nón truyền thống và nón cải tiến">
+        <div class="module-index">ĐỒ HỌA / NÓN TRUYỀN THỐNG & SẢN PHẨM SÁNG TẠO</div>
+        <a class="infographic-zoom" href="infographic-truoc-sau.png" target="_blank" rel="noopener" title="Mở đồ họa trong thẻ mới"><img src="infographic-truoc-sau.png" loading="lazy" decoding="async" alt="Infographic so sánh nón lá truyền thống với nón cách điệu, và ba mẫu nón: vẽ phong cảnh, lụa thêu, trang trí nghệ thuật."></a>
+        
+      </figure>
+
+      <article class="prose reveal"><h2>Tiệm nón Lụa Là: <em>một cách viết tiếp di sản</em></h2><p>Lê Thị Thu Hà đã khởi nghiệp bằng chính sản phẩm của quê hương mình. Từ những trăn trở trên giảng đường đại học, “Tiệm nón Lụa Là” chính thức ra đời, đánh dấu bước chuyển mình lịch sử: xưởng làm nón thủ công của bà ngoại cô bước ra khỏi cái bóng vô danh để trở thành một thương hiệu có bản sắc, có tên gọi và có tiếng nói riêng trên thị trường.</p><p>Cái tên “Lụa Là” được cô sinh viên 22 tuổi lựa chọn không chỉ gợi lên sự mềm mại, thanh tao, mà còn là lời tuyên ngôn về một thế hệ nón mới. Ở tiệm của Hà, chiếc nón vươn ra khỏi giới hạn của cốt tre, lá lụi trắng phau quen thuộc. Qua lăng kính của người trẻ, nón được khoác lên mình những dải lụa rực rỡ, được điểm xuyết bằng nét cọ vẽ tay tỉ mỉ họa cảnh phố cổ, hoa sen, hay phá cách với những gam màu ombre, pastel sành điệu.</p></article>
+
+      <section class="flashcard-section reveal" aria-labelledby="flash-title"><div class="shell"><div class="module-heading"><span class="module-index">TRẢI NGHIỆM TƯƠNG TÁC 04</span><h3 id="flash-title">Một chiếc nón, <em>nhiều diện mạo</em></h3><p>Bấm mũi tên để xem từng mẫu nón, chạm vào thẻ để đọc câu chuyện phía sau. Thẻ cuối là lời kết bằng hình ảnh.</p></div><div class="flash-deck"><button type="button" id="flash-prev" class="flash-arrow" aria-label="Thẻ trước">←</button><div id="flash-card" class="flash-card" tabindex="0" role="button" aria-label="Lật thẻ"><div class="flash-card-inner"><div class="flash-front"><div id="flash-art" class="flash-art" aria-hidden="true"><svg viewBox="0 0 620 470"><use href="#hat-modern"/></svg></div><div class="flash-info"><span id="flash-type">THẺ THIẾT KẾ</span><h4 id="flash-title-text">Sắc màu pastel</h4><p>NHẤN ĐỂ LẬT THẺ ↻</p></div></div><div class="flash-back"><span class="flash-back-label">CÂU CHUYỆN PHÍA SAU</span><h4 id="flash-back-title">Sắc màu pastel</h4><p id="flash-description">Những gam màu nhẹ mở ra cách tiếp cận gần gũi hơn với thị hiếu của người trẻ.</p><span>NHẤN ĐỂ QUAY LẠI ↻</span></div></div></div><button type="button" id="flash-next" class="flash-arrow" aria-label="Thẻ tiếp theo">→</button></div><div class="flash-footer"><span id="flash-count">01 / 08</span><div class="flash-dots" id="flash-dots" role="group" aria-label="Chọn thẻ"></div><span>DÙNG PHÍM ← → ĐỂ ĐỔI THẺ</span></div></div></section>
+
+      
+      <div class="interview-block shell reveal"><figure class="media-frame interview-media" data-media="video" data-src="video-3-nghe-nhan-lao-lang.mp4" data-poster="poster-video-nghe-nhan.jpg" data-label="VIDEO PHỎNG VẤN · NGHỆ NHÂN"><div class="media-placeholder"><span class="play-outline">▶</span><span>VỊ TRÍ VIDEO PHỎNG VẤN NGƯỜI BÀ</span><small>Góc nhìn của người đi trước về hành trình nối nghề</small></div></figure><details class="transcript"><summary>Đọc nội dung phỏng vấn <span>＋</span></summary><p>“Nhìn con bé đem nón lá của làng bán đi khắp nơi, tôi vui đến ứa nước mắt. Vui không phải vì kiếm được nhiều tiền, mà vui vì cháu mình nó không chê quê nghèo, không quên cội nguồn. Cái gốc gác lá lụi, vòng tre này đã nuôi bố mẹ nó, rồi nuôi chính nó khôn lớn. Nay nó dùng chữ nghĩa trên giảng đường để quay về vực dậy cái nghề của làng, người làm bà như tôi thấy toại nguyện lắm rồi.”</p></details></div>
+      <article class="prose reveal closing-prose"><p>Hành trình của Tiệm nón Lụa Là là minh chứng cho một chương mới của di sản: chuyển mình để tồn tại. Giao điểm giữa đôi bàn tay chằm nón thủ công và tư duy thương mại số của cô cháu gái 22 tuổi khẳng định di sản không phải hiện vật đóng băng trong tủ kính, mà là một dòng chảy liên tục.</p><p>Bằng quyết định “tốt nghiệp để trở về”, Thu Hà đã dùng công cụ của thời đại số để định giá lại giọt mồ hôi của thế hệ trước, đưa nón lá kiêu hãnh vươn khỏi lũy tre làng. Thế nhưng, dọc dải đất hình chữ S, vẫn còn hàng ngàn lò gốm, khung cửi đìu hiu đang chờ một cuộc hồi sinh. Sẽ cần bao nhiêu người trẻ dám mang tri thức giảng đường về thắp lại ngọn lửa làng nghề? Câu trả lời đang nằm ở chính sự dấn thân của thế hệ hôm nay.</p></article>
+      <section class="final-film shell reveal" id="video-ket" aria-labelledby="final-film-title">
+        <div class="module-index">VIDEO KẾT · HÀNH TRÌNH TIẾP NỐI</div>
+        <h3 id="final-film-title">Đường kim nối tiếp <em>những thế hệ</em></h3>
+        <p class="final-film-deck">Từ đôi bàn tay của người đi trước đến những lựa chọn của thế hệ hôm nay, câu chuyện chiếc nón lá vẫn đang được viết tiếp.</p>
+        <figure class="media-frame final-film-media" data-media="video" data-src="video-ket-hai-the-he-noi-nghe.mp4" data-poster="poster-video-ket.jpg" data-label="VIDEO KẾT · Hai thế hệ cùng làm nón lá">
+          <div class="media-placeholder"><span class="play-outline" aria-hidden="true">▶</span><span>VIDEO KẾT · HAI THẾ HỆ NỐI NGHỀ</span><small>Cùng giữ gìn và trao truyền nghề làm nón lá</small></div>
+          
+        </figure>
+      </section>
+      <div class="end-note reveal"><svg viewBox="0 0 620 470" aria-hidden="true"><use href="#hat-modern"/></svg><span>KẾT THÚC LOẠT BÀI</span><h2>Một đường kim nối <em>những thế hệ.</em></h2><p class="end-note-description">Hành trình khám phá nón lá chưa dừng lại ở đây. Bạn có thể tự mình thử sức trong không gian trải nghiệm Nếp Nón.</p><div class="end-actions"><a class="end-game-cta" href="https://nepnon.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Chơi minigame Nếp Nón, mở trong tab mới"><span aria-hidden="true">✦</span> CHƠI MINIGAME NẾP NÓN <span aria-hidden="true">↗</span></a><a class="end-back-link" href="#dau-trang">Trở về đầu trang ↑</a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>NÓN LÁ</strong><span>MỘT LONGFORM · BA KỲ</span></div><p>Hành trình ba kỳ về chiếc nón lá, làng Chuông và những thế hệ tiếp nối nghề truyền thống.</p><a href="#dau-trang" aria-label="Lên đầu trang">↑</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+/**
+ * NÓN LÁ LONGFORM · JavaScript thuần, không cần cài đặt.
+ *
+ * CHÈN ẢNH / VIDEO:
+ * 1. Đặt các file ảnh, GIF và video cùng thư mục với index.html.
+ * 2. Trong index.html, tìm thẻ <figure data-media="image" data-src="">.
+ * 3. Sửa data-src="ten-anh.jpg" (hoặc tên-video.mp4 cho video).
+ * 4. Với video có ảnh đại diện, thêm data-poster="poster.jpg".
+ * 5. Ảnh so sánh: #compare-before và #compare-after -> data-image="...".
+ * 6. Ảnh flashcard: cập nhật trường image bên dưới.
+ * Mọi ảnh và video được đặt cạnh index.html, không cần thư mục assets.
+ */
+'use strict';
+
+const qs = (selector, root = document) => root.querySelector(selector);
+const qsa = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function setMedia() {
+  qsa('.media-frame[data-media]').forEach((frame) => {
+    const src = (frame.dataset.src || '').trim();
+    if (!src) return;
+    const kind = frame.dataset.media;
+    const label = frame.dataset.label || 'Tư liệu minh họa';
+    let element;
+    if (kind === 'image') {
+      element = document.createElement('img');
+      element.src = src;
+      element.alt = frame.dataset.alt || label;
+      element.loading = 'lazy';
+      element.decoding = 'async';
+    } else if (kind === 'video') {
+      element = document.createElement('video');
+      element.src = src;
+      element.controls = true;
+      element.preload = 'metadata';
+      element.playsInline = true;
+      element.setAttribute('aria-label', label);
+      if (frame.dataset.poster) element.poster = frame.dataset.poster;
+    } else return;
+    element.addEventListener('error', () => {
+      const fallback = document.createElement('div');
+      fallback.className = 'media-placeholder';
+      fallback.innerHTML = '<span class="media-glyph">!</span><span>KHÔNG ĐỌC ĐƯỢC TƯ LIỆU</span><small>Kiểm tra lại đường dẫn trong data-src.</small>';
+      element.replaceWith(fallback);
+    }, { once: true });
+    const old = qs('.media-placeholder', frame);
+    if (old) old.replaceWith(element);
+    else frame.insertBefore(element, frame.firstChild);
+    frame.classList.add('has-media');
+  });
+
+  [['#compare-before', 'Ảnh nón truyền thống'], ['#compare-after', 'Ảnh nón hiện đại']].forEach(([selector, alt]) => {
+    const layer = qs(selector);
+    if (!layer || !layer.dataset.image?.trim()) return;
+    const img = document.createElement('img');
+    img.src = layer.dataset.image;
+    img.alt = alt;
+    img.addEventListener('error', () => img.remove(), {once:true});
+    layer.prepend(img);
+  });
+}
+
+function navAndProgress() {
+  const chapters = qsa('.chapter-tracker');
+  const links = qsa('.nav-link');
+  const select = qs('#mobile-chapters');
+  const progress = qs('#reading-progress');
+  const share = qs('#share-button');
+  let ticking = false;
+
+  function update() {
+    const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    progress.style.transform = `scaleX(${Math.min(1, Math.max(0, window.scrollY / scrollable))})`;
+    let active = 'ky-1';
+    chapters.forEach((chapter) => {
+      if (chapter.getBoundingClientRect().top <= 130) active = chapter.dataset.chapter;
+    });
+    links.forEach((link) => {
+      const isActive = link.dataset.chapter === active;
+      link.classList.toggle('is-current', isActive);
+      if (isActive) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+    if (select && select.value !== active) select.value = active;
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, {passive:true});
+  window.addEventListener('resize', update, {passive:true});
+  update();
+
+  if (select) select.addEventListener('change', () => {
+    const target = document.getElementById(select.value);
+    if (target) { target.scrollIntoView({behavior: reducedMotion ? 'auto' : 'smooth'}); history.replaceState(null, '', '#' + target.id); }
+  });
+
+  share?.addEventListener('click', async () => {
+    const url = window.location.href;
+    try {
+      if (navigator.share) await navigator.share({title:document.title,url});
+      else if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(url); showToast('Đã sao chép liên kết trang.'); }
+      else showToast('Sao chép địa chỉ trên thanh trình duyệt để chia sẻ.');
+    } catch (error) { if (error.name !== 'AbortError') showToast('Bạn có thể sao chép liên kết trên thanh địa chỉ.'); }
+  });
+}
+
+let toastTimer;
+function showToast(message) {
+  const toast = qs('#toast');
+  toast.textContent = message;
+  toast.classList.add('is-visible');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2600);
+}
+
+function revealOnScroll() {
+  const items = qsa('.reveal');
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    items.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      obs.unobserve(entry.target);
+    });
+  }, {rootMargin:'0px 0px -75px 0px',threshold:.05});
+  items.forEach((el) => observer.observe(el));
+}
+
+const materialInfo = {
+  leaf:{number:'01 / 03 — CHẤT LIỆU',symbol:'✺',name:'Lá nón',desc:'Lớp lá được chọn, phơi, là phẳng rồi xếp lên khuôn. Đây là bề mặt tạo nên vẻ thanh thoát và khả năng che nắng, che mưa của chiếc nón.'},
+  bamboo:{number:'02 / 03 — CHẤT LIỆU',symbol:'◎',name:'Tre làm vành',desc:'Tre được vót thành những vòng đều nhau để định hình độ tròn, tạo khung đỡ và giữ cho chiếc nón cân đối.'},
+  thread:{number:'03 / 03 — CHẤT LIỆU',symbol:'⌁',name:'Chỉ khâu',desc:'Từng mũi chỉ nối lớp lá với khung tre. Đường khâu đều và chắc giữ dáng nón, đồng thời thể hiện sự tỉ mỉ của người thợ.'}
+};
+function materialsInteractive() {
+  const buttons = qsa('[data-material]');
+  function selectMaterial(key) {
+    const data = materialInfo[key];
+    if (!data) return;
+    qs('#material-counter').textContent = data.number;
+    qs('#material-symbol').textContent = data.symbol;
+    qs('#material-name').textContent = data.name;
+    qs('#material-desc').textContent = data.desc;
+    buttons.forEach((button) => {
+      const active = button.dataset.material === key;
+      button.classList.toggle('is-active', active);
+      if (button.classList.contains('hotspot')) button.setAttribute('aria-pressed', String(active));
+    });
+  }
+  buttons.forEach((button) => button.addEventListener('click', () => selectMaterial(button.dataset.material)));
+}
+
+const steps = [
+  {title:'Chọn và xử lý lá',description:'Chọn lá thích hợp, phơi và là phẳng để tạo bề mặt mịn, dễ xếp vào khuôn.'},
+  {title:'Vót và làm vành',description:'Tre được vót thành những vành tròn đều, tạo khung cho nón có dáng cân đối.'},
+  {title:'Lợp lá lên khuôn',description:'Những lớp lá được xếp đều lên khuôn, căn chỉnh để bề mặt nón phẳng và đẹp.'},
+  {title:'Khâu nón',description:'Người thợ dùng những đường chỉ nhỏ, đều và chắc để giữ các lớp lá vào vành nón.'},
+  {title:'Hoàn thiện',description:'Chiếc nón được kiểm tra độ bền, chỉnh sửa và hoàn tất trước khi đưa đến người sử dụng.'}
+];
+function processInteractive() {
+  const buttons = qsa('.process-step');
+  function setStep(index, seekVideo = false) {
+    const step = steps[index];
+    if (!step) return;
+    qs('#step-counter').textContent = `${String(index + 1).padStart(2,'0')} / 05`;
+    qs('#step-title').textContent = step.title;
+    qs('#step-desc').textContent = step.description;
+    qs('#step-progress').style.width = `${(index + 1) * 20}%`;
+    buttons.forEach((b, i) => {b.classList.toggle('is-active',i === index);b.setAttribute('aria-pressed',String(i === index));});
+    const videoFrame = qs('.process-video');
+    const video = qs('video', videoFrame);
+    // Có thể tùy chỉnh data-times="0,6,12,18,25" cho video quy trình.
+    if (seekVideo && video && videoFrame.dataset.times) {
+      const time = Number(videoFrame.dataset.times.split(',')[index]);
+      if (Number.isFinite(time)) { try { video.currentTime = time; } catch { /* Chưa tải metadata */ } }
+    }
+  }
+  buttons.forEach((button) => button.addEventListener('click', () => setStep(Number(button.dataset.step),true)));
+  if ('IntersectionObserver' in window && window.innerWidth > 780) {
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting);
+      if (visible.length) setStep(Number(visible[visible.length - 1].target.dataset.step));
+    },{rootMargin:'-26% 0px -55% 0px',threshold:0});
+    buttons.forEach((button) => observer.observe(button));
+  }
+}
+
+function hatMakingGame() {
+  const correct = ['Chọn lá','Làm vành','Lợp lá','Khâu nón','Hoàn thiện'];
+  const mixed = ['Khâu nón','Chọn lá','Hoàn thiện','Lợp lá','Làm vành'];
+  const track = qs('#game-track');
+  const options = qs('#game-options');
+  const feedback = qs('#game-feedback');
+  let chosen = [];
+  function render() {
+    track.replaceChildren(); options.replaceChildren();
+    if (!chosen.length) {
+      const hint = document.createElement('span'); hint.className = 'game-empty'; hint.textContent = 'Các bước bạn chọn sẽ xuất hiện ở đây…';track.appendChild(hint);
+    }
+    chosen.forEach((step,i) => {
+      const item = document.createElement('span');item.className = 'game-selected';item.textContent = `${i+1}. ${step}`;track.appendChild(item);
+    });
+    mixed.forEach((step) => {
+      const button = document.createElement('button');button.type='button';button.className='game-option';button.textContent=step;
+      button.disabled=chosen.includes(step);
+      button.addEventListener('click',() => {
+        if(step !== correct[chosen.length]) {
+          feedback.textContent = 'Chưa đúng thứ tự. Hãy thử chọn bước cần làm tiếp theo!';
+          feedback.className = 'game-feedback error';
+          return;
+        }
+        chosen.push(step);
+        feedback.textContent = chosen.length === correct.length ? 'Chính xác! Bạn đã hoàn thành quy trình làm một chiếc nón. ✦' : `Đúng rồi! Tiếp tục bước ${chosen.length+1} / 5.`;
+        feedback.className = chosen.length === correct.length ? 'game-feedback success' : 'game-feedback';
+        render();
+      });
+      options.appendChild(button);
+    });
+  }
+  qs('#game-reset').addEventListener('click',() => {chosen=[];feedback.textContent='Hãy chọn bước đầu tiên.';feedback.className='game-feedback';render();});
+  render();
+}
+
+function compareInteractive() {
+  const compare = qs('#compare-visual');
+  const slider = qs('#compare-slider');
+  slider.addEventListener('input',() => {
+    compare.style.setProperty('--split',`${slider.value}%`);
+    slider.setAttribute('aria-valuetext',`${slider.value} phần trăm nón truyền thống`);
+  });
+}
+
+// Chèn ảnh thẻ tùy ý: image:'non-pastel.jpg'. Thẻ cuối dành cho video.
+// 5 mẫu nón sẵn có + 3 ảnh mới. Đặt tất cả file ảnh cạnh index.html (không có ).
+const flashcards = [
+  {type:'MẪU NÓN / 01',title:'Nón lụa sắc hồng',desc:'Một mẫu nón trang trí gam hồng cùng hoa và phụ kiện, phù hợp làm quà tặng và điểm nhấn phong cách.',image:'non-lua-la-hong-hoa.jpg',artClass:'card-0'},
+  {type:'MẪU NÓN / 02',title:'Nón hồng phối phụ kiện',desc:'Một phiên bản tông hồng kết hợp phụ kiện trang trí, tạo cảm giác mềm mại và khác biệt.',image:'non-lua-la-hong-phoi.jpg',artClass:'card-1'},
+  {type:'MẪU NÓN / 03',title:'Nón vẽ phong cảnh',desc:'Họa tiết kiến trúc và hoa lá gợi hình ảnh quê hương, biến chiếc nón thành một bề mặt kể chuyện bằng hình ảnh.',image:'non-lua-la-minh-hoa-1.jpg',artClass:'card-2'},
+  {type:'MẪU NÓN / 04',title:'Nón lụa thêu',desc:'Sắc hồng và họa tiết hoa thêu tạo nên một lựa chọn mới cho quà tặng, biểu diễn và trang trí.',image:'non-lua-la-minh-hoa-2.jpg',artClass:'card-3'},
+  {type:'MẪU NÓN / 05',title:'Nón trang trí nghệ thuật',desc:'Những họa tiết trang trí mở rộng cách sử dụng chiếc nón bên ngoài công năng thường ngày.',image:'non-lua-la-minh-hoa-3.jpg',artClass:'card-1'},
+  {type:'MẪU NÓN / 06',title:'Hoa sen trên vành nón',desc:'Hình ảnh hoa sen cùng chi tiết trang trí làm mới chiếc nón truyền thống, đem đến một góc nhìn giàu tính nghệ thuật.',image:'non-trang-tri-hoa-sen.jpg',artClass:'card-2'},
+  {type:'MẪU NÓN / 07',title:'Nón mini muôn sắc',desc:'Những phiên bản nón nhỏ được phối màu, đính hạt và tua chỉ, cho thấy cách nghề thủ công đi vào các vật phẩm trang trí.',image:'non-mini-sac-mau.jpg',artClass:'card-3'},
+  {type:'LỜI KẾT / 08',title:'Di sản qua những thế hệ',desc:'“Chiếc nón có thể đổi dáng, đổi màu — nhưng đường kim nối các thế hệ vẫn còn đó.”',image:'la-sen-loi-ket.jpg',artClass:'card-0',quote:'Chiếc nón có thể đổi dáng, đổi màu — nhưng đường kim nối các thế hệ vẫn còn đó.'}
+];
+
+function flashcardInteractive() {
+  const card = qs('#flash-card');
+  const art = qs('#flash-art');
+  const count = qs('#flash-count');
+  const dots = qs('#flash-dots');
+  let index = 0;
+  flashcards.forEach((item,i) => {
+    const dot=document.createElement('button');dot.type='button';dot.setAttribute('aria-label',`Xem thẻ ${i+1}: ${item.title}`);
+    dot.addEventListener('click',() => show(i));dots.appendChild(dot);
+  });
+  function show(next) {
+    index = (next + flashcards.length) % flashcards.length;
+    const data = flashcards[index];
+    card.classList.remove('is-flipped');
+    qs('#flash-type').textContent=data.type;
+    qs('#flash-title-text').textContent=data.title;
+    qs('#flash-back-title').textContent=data.title;
+    qs('#flash-description').textContent=data.desc;
+    art.className = 'flash-art ' + data.artClass;
+    art.replaceChildren();
+    if (data.image) {
+      art.style.backgroundImage = `url("${data.image.replaceAll('"','%22')}")`;
+      art.classList.add('has-image');
+    } else {
+      art.style.backgroundImage = '';
+    }
+    if (data.quote) {
+      art.classList.add('quote-card');
+      const overlay = document.createElement('div');
+      overlay.className = 'flash-quote-overlay';
+      const eyebrow = document.createElement('small');
+      eyebrow.textContent = 'LỜI KẾT LONGFORM';
+      const quote = document.createElement('span');
+      quote.textContent = `“${data.quote}”`;
+      overlay.append(eyebrow, quote);
+      art.appendChild(overlay);
+    }
+    card.classList.toggle('is-quote-card', Boolean(data.quote));
+    count.textContent=`${String(index+1).padStart(2,'0')} / ${String(flashcards.length).padStart(2,'0')}`;
+    qsa('button',dots).forEach((dot,i)=>dot.classList.toggle('is-active',i===index));
+    card.setAttribute('aria-label', data.quote ? `Lật thẻ cuối. Lời kết: ${data.quote}` : `Lật thẻ ${index+1}, ${data.title}`);
+  }
+  function flip(){card.classList.toggle('is-flipped');}
+  card.addEventListener('click',flip);
+  card.addEventListener('keydown',(event)=>{
+    if(event.key==='Enter' || event.key===' '){event.preventDefault();flip();}
+    else if(event.key==='ArrowLeft'){event.preventDefault();show(index-1);}
+    else if(event.key==='ArrowRight'){event.preventDefault();show(index+1);}
+  });
+  qs('#flash-prev').addEventListener('click',()=>show(index-1));
+  qs('#flash-next').addEventListener('click',()=>show(index+1));
+  show(0);
+}
+
+
+// Điều khiển ảnh động bằng cách chuyển giữa GIF và ảnh tĩnh.
+function initHeroMotion() {
+  const img = document.getElementById('hero-gif');
+  const button = document.getElementById('hero-motion-toggle');
+  if (!img || !button) return;
+  // Ghi nhớ nguồn GIF ban đầu; có thể là data URI (bản HTML độc lập).
+  const animatedUrl = img.dataset.gif || img.getAttribute('src');
+  const stillUrl = img.dataset.still;
+  let paused = reducedMotion;
+  function updateMotion() {
+    const nextSource = paused ? stillUrl : animatedUrl;
+    if (nextSource && img.getAttribute('src') !== nextSource) img.setAttribute('src', nextSource);
+    button.setAttribute('aria-pressed', String(paused));
+    button.setAttribute('aria-label', paused ? 'Phát lại ảnh động' : 'Tạm dừng ảnh động');
+    const symbol = button.querySelector('.hero-motion-toggle-icon');
+    const text = button.querySelector('.hero-motion-toggle-text');
+    if (symbol) symbol.textContent = paused ? '▶' : 'Ⅱ';
+    if (text) text.textContent = paused ? 'Phát lại chuyển động' : 'Tạm dừng chuyển động';
+  }
+  button.addEventListener('click', () => { paused = !paused; updateMotion(); });
+  updateMotion();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  initHeroMotion();
+  setMedia();
+  navAndProgress();
+  revealOnScroll();
+  materialsInteractive();
+  processInteractive();
+  hatMakingGame();
+  compareInteractive();
+  flashcardInteractive();
+});
+
+</script>
+</body>
+</html>
